@@ -517,7 +517,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     boolean llOkay = false;
     final String lcFileName = "SampleData.zip";
     final String lcLocalPath = Global.getUserHomeApplicationPath() + lcFileName;
-    if (Util.downloadWebFile("http://www.beowurks.com/Software/PolyJen/SampleData/" + lcFileName, lcLocalPath))
+    if (Util.downloadWebFile("https://www.beowurks.com/Software/PolyJen/SampleData/" + lcFileName, lcLocalPath))
     {
       llOkay = true;
 
@@ -788,11 +788,11 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     }
     else if (loObject == this.menuDocumentationPDF1)
     {
-      Util.launchBrowser("http://www.beowurks.com/Software/PolyJen/Help/Documentation.pdf");
+      Util.launchBrowser("https://www.beowurks.com/Software/PolyJen/Help/Documentation.pdf");
     }
     else if (loObject == this.menuDocumentationHTM1)
     {
-      Util.launchBrowser("http://www.beowurks.com/Software/PolyJen/Help/Documentation.html");
+      Util.launchBrowser("https://www.beowurks.com/Software/PolyJen/Help/Documentation.html");
     }
     else if (loObject == this.menuAbout1)
     {
@@ -809,7 +809,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
       final String lcTitleURL = "http://polyjen.sourceforge.net/";
 
       //Polymerization in a digital laboratory
-      final IAbout loAbout = new AboutAdapter(Util.getTitle(), lcTitleURL, loLogo, lcTitleURL, "Eclipse Public License 1.0", "http://opensource.org/licenses/eclipse-1.0.php", 2003, "Beowurks", "http://www.beowurks.com/");
+      final IAbout loAbout = new AboutAdapter(Util.getTitle(), lcTitleURL, loLogo, lcTitleURL, "Eclipse Public License 1.0", "http://opensource.org/licenses/eclipse-1.0.php", 2003, "Beowurks", "https://www.beowurks.com/");
 
       new DialogAbout(BaseFrame.getActiveFrame(), loAbout);
     }
