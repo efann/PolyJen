@@ -161,16 +161,16 @@ public class PolymerizationEdit1 extends PolyJenBaseDialog implements ActionList
     this.txtCreatedOn1.setText(this.foPolymerParametersXML.getFormattedDate(this.foPolymerParametersXML.getCreatedOn()));
     this.txtCreatedBy1.setText(this.foPolymerParametersXML.getCreatedBy());
 
-    this.txtInitiatorMolecules1.setValue(Integer.valueOf(this.foPolymerParametersXML.getInitiatorMolecules()));
-    this.txtMWofInitiator1.setValue(Double.valueOf(this.foPolymerParametersXML.getMWOfInitiator()));
-    this.txtMWofMonomer1.setValue(Double.valueOf(this.foPolymerParametersXML.getMWOfMonomer()));
+    this.txtInitiatorMolecules1.setValue(this.foPolymerParametersXML.getInitiatorMolecules());
+    this.txtMWofInitiator1.setValue(this.foPolymerParametersXML.getMWOfInitiator());
+    this.txtMWofMonomer1.setValue(this.foPolymerParametersXML.getMWOfMonomer());
 
-    this.spnSites1.setValue(Integer.valueOf(this.foPolymerParametersXML.getSites()));
-    this.spnLevels1.setValue(Integer.valueOf(this.foPolymerParametersXML.getLevels()));
+    this.spnSites1.setValue(this.foPolymerParametersXML.getSites());
+    this.spnLevels1.setValue(this.foPolymerParametersXML.getLevels());
 
     for (int i = 0; i < this.txtTotalMonomerReacted.length; ++i)
     {
-      this.txtTotalMonomerReacted[i].setValue(Integer.valueOf(this.foPolymerParametersXML.getMonomerLevelReacted(i)));
+      this.txtTotalMonomerReacted[i].setValue(this.foPolymerParametersXML.getMonomerLevelReacted(i));
     }
   }
 
@@ -575,7 +575,7 @@ public class PolymerizationEdit1 extends PolyJenBaseDialog implements ActionList
   // ---------------------------------------------------------------------------
   private void updateSpinnersRelatedAccessibilities()
   {
-    final int lnSites = ((Integer) this.spnSites1.getValue()).intValue();
+    final int lnSites = (Integer) this.spnSites1.getValue();
 
     for (int i = 0; i < Global.MAX_POLYMER_SITES; ++i)
     {
@@ -586,7 +586,7 @@ public class PolymerizationEdit1 extends PolyJenBaseDialog implements ActionList
       this.tabPane.setSelectedIndex(lnSites - 1);
     }
 
-    final int lnLevels = ((Integer) this.spnLevels1.getValue()).intValue();
+    final int lnLevels = (Integer) this.spnLevels1.getValue();
 
     for (int i = 0; i < this.txtTotalMonomerReacted.length; ++i)
     {
@@ -830,17 +830,17 @@ class EditingTabelModel extends AbstractTableModel
 
       if (i == 0)
       {
-        this.faData.add(new Object[]{Global.EDIT_FIRST_ROW, Double.valueOf(taValues[i][1] / 100.0)});
+        this.faData.add(new Object[]{Global.EDIT_FIRST_ROW, taValues[i][1] / 100.0});
       }
 
       else if (i == (lnCount - 1))
       {
-        this.faData.add(new Object[]{Global.EDIT_LAST_ROW, Double.valueOf(taValues[i][1] / 100.0)});
+        this.faData.add(new Object[]{Global.EDIT_LAST_ROW, taValues[i][1] / 100.0});
       }
 
       else
       {
-        this.faData.add(new Object[]{Integer.valueOf(taValues[i][0]), Double.valueOf(taValues[i][1] / 100.0)});
+        this.faData.add(new Object[]{taValues[i][0], taValues[i][1] / 100.0});
       }
 
     }
@@ -915,7 +915,7 @@ class EditingTabelModel extends AbstractTableModel
         tnRow = 1;
       }
 
-      this.faData.insertElementAt(new Object[]{Integer.valueOf(0), Double.valueOf(0)}, tnRow);
+      this.faData.insertElementAt(new Object[]{0, (double) 0}, tnRow);
       this.fireTableRowsInserted(tnRow, tnRow);
     }
     else
@@ -983,12 +983,12 @@ class EditingTabelModel extends AbstractTableModel
           // Remember: the 2nd column needs to be converted from percentages with 2 digits
           // to the right of the decimal back to an integer value.
           loDouble = (Double) loObject;
-          laData[y][x] = (int) (loDouble.doubleValue() * 100.0);
+          laData[y][x] = (int) (loDouble * 100.0);
         }
         else if (loObject instanceof Integer)
         {
           loInteger = (Integer) loObject;
-          laData[y][x] = loInteger.intValue();
+          laData[y][x] = loInteger;
         }
       }
     }
@@ -1058,7 +1058,7 @@ class MonomerCellEditor extends DefaultCellEditor
       Util.errorMessage(this.foWindow, "The value of this cell is '" + lnErrorValue + "'.\n\nHowever, it should be between '" + Global.MIN_MONOMER_VALUE + "' and '" + Global.MAX_MONOMER_VALUE + "': the number will be reset to '" + lnValue + "'.");
     }
 
-    return (Integer.valueOf(lnValue));
+    return (lnValue);
   }
   // ---------------------------------------------------------------------------
 }
@@ -1122,7 +1122,7 @@ class ReactionRateCellEditor extends DefaultCellEditor
       Util.errorMessage(this.foWindow, "The value of this cell is '" + lnErrorValue + "'.\n\nHowever, it should be between '" + Global.MIN_REACTIONRATE_VALUE + "' and '" + Global.MAX_REACTIONRATE_VALUE + "': the number will be reset to '" + lnValue + "'.");
     }
 
-    return (Double.valueOf(lnValue));
+    return (lnValue);
   }
   // ---------------------------------------------------------------------------
 }

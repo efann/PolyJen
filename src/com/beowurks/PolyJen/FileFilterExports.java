@@ -248,7 +248,7 @@ public class FileFilterExports
       // then you will get the "Not supported: indent-number" error.
       try
       {
-        loFactory.setAttribute("indent-number", Integer.valueOf(2));
+        loFactory.setAttribute("indent-number", 2);
       }
       catch (final IllegalArgumentException ignored)
       {

@@ -220,10 +220,10 @@ public class Evaluate1 extends PolyJenBaseInternalFrame implements Runnable
     int lnValue;
 
     lnValue = loProp.getEvaluateInitiatorMolecules();
-    this.txtInitiatorMolecules1.setValue(Integer.valueOf(lnValue));
+    this.txtInitiatorMolecules1.setValue(lnValue);
 
     lnValue = loProp.getEvaluateMonomerMolecules();
-    this.txtMonomerMolecules1.setValue(Integer.valueOf(lnValue));
+    this.txtMonomerMolecules1.setValue(lnValue);
   }
 
   // ---------------------------------------------------------------------------
@@ -408,14 +408,10 @@ public class Evaluate1 extends PolyJenBaseInternalFrame implements Runnable
       Util.errorMessageInThread(this, "You canceled the current operation.");
     }
 
-    SwingUtilities.invokeLater(new Runnable()
+    SwingUtilities.invokeLater(() ->
     {
-      @Override
-      public void run()
-      {
-        Evaluate1.this.btnSpreadChart1.updateChart();
-        Evaluate1.this.btnDistributionChart1.updateChart();
-      }
+      Evaluate1.this.btnSpreadChart1.updateChart();
+      Evaluate1.this.btnDistributionChart1.updateChart();
     });
 
     final boolean llCompleted = !loProgressMonitor.isCanceled();
@@ -453,7 +449,7 @@ class EvaluateDistributionDataset extends BaseAbstractSeriesDataset
   @Override
   public Number getX(final int series, final int item)
   {
-    return (Integer.valueOf(item + this.foEvaluate.fnDistributionMin));
+    return (item + this.foEvaluate.fnDistributionMin);
   }
 
   // ---------------------------------------------------------------------------
@@ -461,7 +457,7 @@ class EvaluateDistributionDataset extends BaseAbstractSeriesDataset
   public Number getY(final int series, final int item)
   {
     final int lnValue = (this.foEvaluate.faDistribution == null) ? 0 : this.foEvaluate.faDistribution[item];
-    return (Integer.valueOf(lnValue));
+    return (lnValue);
   }
 
   // ---------------------------------------------------------------------------
@@ -520,7 +516,7 @@ class EvaluateSpreadDataset extends BaseAbstractSeriesDataset
   @Override
   public Number getX(final int series, final int item)
   {
-    return (Integer.valueOf(item));
+    return (item);
   }
 
   // ---------------------------------------------------------------------------
@@ -528,7 +524,7 @@ class EvaluateSpreadDataset extends BaseAbstractSeriesDataset
   public Number getY(final int series, final int item)
   {
     final int lnValue = (this.foEvaluate.faElements == null) ? 0 : this.foEvaluate.faElements[item];
-    return (Integer.valueOf(lnValue));
+    return (lnValue);
   }
 
   // ---------------------------------------------------------------------------

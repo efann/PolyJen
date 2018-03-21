@@ -198,7 +198,7 @@ public class ListComponents implements ListSelectionListener, ActionListener
       llRefresh = true;
 
       this.grdPolymer1 = new SortingTable();
-      this.grdPolymer1.setupColumns(new Object[][]{{"Unique Name", ""}, {"Title", ""}, {"# of Initiator Molecules", Integer.valueOf(0)}, {"Molecular Weight of Initiator", Double.valueOf(0)}, {"Molecular Weight of Monomer", Double.valueOf(0)}, {"Polymer Sites", Integer.valueOf(0)}, {"Monomer Levels Used", Integer.valueOf(0)}, {"Created On", new Date()}, {"Created By", ""}, {"Last Modified On", new Date()}, {"Last Modified By", ""}});
+      this.grdPolymer1.setupColumns(new Object[][]{{"Unique Name", ""}, {"Title", ""}, {"# of Initiator Molecules", 0}, {"Molecular Weight of Initiator", (double) 0}, {"Molecular Weight of Monomer", (double) 0}, {"Polymer Sites", 0}, {"Monomer Levels Used", 0}, {"Created On", new Date()}, {"Created By", ""}, {"Last Modified On", new Date()}, {"Last Modified By", ""}});
 
       this.grdPolymer1.setupHeaderRenderer();
 
@@ -293,7 +293,7 @@ public class ListComponents implements ListSelectionListener, ActionListener
       loIndex.fcFileName = loProp.getFileName();
       this.foList.add(loIndex);
 
-      loModel.addRow(new Object[]{loProp.getFileName(), loProp.getTitle(), Integer.valueOf(loProp.getInitiatorMolecules()), Double.valueOf(loProp.getMWOfInitiator()), Double.valueOf(loProp.getMWOfMonomer()), Integer.valueOf(loProp.getSites()), Integer.valueOf(loProp.getLevels()), loProp.getCreatedOn(), loProp.getCreatedBy(), loProp.getModifiedOn(), loProp.getModifiedBy()});
+      loModel.addRow(new Object[]{loProp.getFileName(), loProp.getTitle(), loProp.getInitiatorMolecules(), loProp.getMWOfInitiator(), loProp.getMWOfMonomer(), loProp.getSites(), loProp.getLevels(), loProp.getCreatedOn(), loProp.getCreatedBy(), loProp.getModifiedOn(), loProp.getModifiedBy()});
     }
 
     final boolean llLoadFromProperties = !loModel.isSorted();
@@ -302,7 +302,7 @@ public class ListComponents implements ListSelectionListener, ActionListener
 
     this.grdPolymer1.sortColumn(lnColumn, false, llLoadFromProperties ? this.flInitialAscending : this.grdPolymer1.getSortButtonRenderer().isCurrentColumnAscending());
 
-    Collections.sort(this.foList, new StringComparator());
+    this.foList.sort(new StringComparator());
 
     // Populate the combo box.
     for (final ListIndex loList : this.foList)

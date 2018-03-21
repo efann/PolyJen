@@ -5,7 +5,7 @@
   <property name="dirs.base" value="${basedir}"/>
 
   <property name="Beo.Title" value="PolyJen"/>
-  <property name="Beo.Version" value="2018.0.1"/>
+  <property name="Beo.Version" value="2018.0.2"/>
   <property name="Beo.Vendor" value="Beowurks"/>
   <property name="Beo.AppClass" value="com.beowurks.PolyJen.Application"/>
 
