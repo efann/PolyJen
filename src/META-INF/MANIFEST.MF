@@ -3,8 +3,8 @@ Ant-Version: Apache Ant 1.9.4
 Created-By: 1.8.0_162-b12 (Oracle Corporation)
 Main-Class: com.beowurks.PolyJen.Application
 Implementation-Vendor: Beowurks
-Implementation-Version: 2018.0.4
+Implementation-Version: 2018.0.5
 Implementation-Title: PolyJen
-Built-On: 2018-03-21 17:14:04
+Built-On: 2018-03-21 17:31:11
 Permissions: all-permissions
 

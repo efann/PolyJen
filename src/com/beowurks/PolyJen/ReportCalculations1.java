@@ -10,12 +10,11 @@
 package com.beowurks.PolyJen;
 
 import com.beowurks.BeoCommon.SchemaWriter;
+import com.beowurks.BeoCommon.Util;
 import com.beowurks.BeoCommon.XMLTextWriter;
-
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
-
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.category.CategoryDataset;
 import org.w3c.dom.Node;
@@ -62,7 +61,7 @@ public class ReportCalculations1 extends ReportBase
     }
     catch (final Exception loErr)
     {
-      loErr.printStackTrace();
+      Util.showStackTraceInMessage(this, loErr, "Report Error");
     }
   }
 

@@ -46,6 +46,9 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/libraries/jasper-reports/xml-apis-1.3.02.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libraries/jasper-reports/xml-apis-ext.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libraries/jasper-reports/xmlbeans-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/xalan/serializer-2.7.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/xalan/xalan-2.7.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/xalan/xml-apis-1.3.04.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
