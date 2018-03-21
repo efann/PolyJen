@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ParameterData>
+  <Title>Sample - Nonylphenol Ethoxylate N-10</Title>
+  <PolymerSites>1</PolymerSites>
+  <ReactionLevels>1</ReactionLevels>
+  <InitiatorMolecules>10000</InitiatorMolecules>
+  <MWofInitiator>200.0</MWofInitiator>
+  <MWofMonomer>44.0</MWofMonomer>
+  <CreatedBy>Eddie Fann</CreatedBy>
+  <CreatedOn>1129309887573</CreatedOn>
+  <ModifiedBy>efann</ModifiedBy>
+  <ModifiedOn>1158725279375</ModifiedOn>
+  <MonomerReactionLevels>
+    <Reaction Level="0">10000</Reaction>
+    <Reaction Level="1">0</Reaction>
+    <Reaction Level="2">0</Reaction>
+  </MonomerReactionLevels>
+  <Arrays>
+    <Grid Level="0" Site="0">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">400</Cell>
+      <Cell x="0" y="1">2</Cell>
+      <Cell x="1" y="1">10</Cell>
+      <Cell x="0" y="2">3</Cell>
+      <Cell x="1" y="2">10</Cell>
+      <Cell x="0" y="3">4</Cell>
+      <Cell x="1" y="3">10</Cell>
+      <Cell x="0" y="4">5</Cell>
+      <Cell x="1" y="4">10</Cell>
+      <Cell x="0" y="5">2147483647</Cell>
+      <Cell x="1" y="5">10</Cell>
+    </Grid>
+    <Grid Level="0" Site="1">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="0" Site="2">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="0" Site="3">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="0" Site="4">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="0" Site="5">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="0" Site="6">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="0" Site="7">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="0" Site="8">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="1" Site="0">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="1" Site="1">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="1" Site="2">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="1" Site="3">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="1" Site="4">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="1" Site="5">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="1" Site="6">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="1" Site="7">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="1" Site="8">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="2" Site="0">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="2" Site="1">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="2" Site="2">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="2" Site="3">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="2" Site="4">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="2" Site="5">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="2" Site="6">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="2" Site="7">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+    <Grid Level="2" Site="8">
+      <Cell x="0" y="0">1</Cell>
+      <Cell x="1" y="0">0</Cell>
+      <Cell x="0" y="1">2147483647</Cell>
+      <Cell x="1" y="1">0</Cell>
+    </Grid>
+  </Arrays>
+</ParameterData>

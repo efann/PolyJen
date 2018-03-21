@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="https://www.beowurks.com/Software/PolyJen/" href="PolyJen.jnlp">
+  <information>
+    <title>PolyJen</title>
+    <vendor>Beowurks</vendor>
+    <homepage href="https://www.beowurks.com/" />
+    <description>Polymerization in a digital laboratory</description>
+    <description kind="short">A polymerization modeling tool.</description>
+    <description kind="tooltip">PolyJen</description>
+    <icon href="https://www.beowurks.com/Software/PolyJen/Icon.jpg"/>
+    <icon kind="splash" href="https://www.beowurks.com/Software/Images/BeowurksSplashForJWS.jpg"/>
+    <offline-allowed />
+    <shortcut online="true">      
+      <desktop/>      
+      <menu submenu="Beowurks"/>    
+    </shortcut>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+  <resources>
+    <j2se version="1.8+" initial-heap-size="12m" max-heap-size="256m"/>
+    <jar href="PolyJen.jar" />
+  </resources>
+  <application-desc />
+</jnlp>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ PolyJen: a program that predicts chain-growth polymerization (specifically oxyalkylation)
+  ~          reactions and minimizes expensive laboratory experimentation.
+  ~
+  ~ Copyright(c) 2003-2018, Beowurks.
+  ~ License: Eclipse Public License - v 2.0 (https://www.eclipse.org/legal/epl-2.0/)
+  ~
+  -->
+
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Evaluation1" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8a3c6cae-2daf-42ce-9130-23d39d7a16cc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="xPath">
+		<![CDATA[/EvaluationData/Records]]>
+	</queryString>
+	<field name="Initiator" class="java.lang.String">
+		<fieldDescription><![CDATA[Initiator]]></fieldDescription>
+	</field>
+	<field name="Reacted" class="java.lang.String">
+		<fieldDescription><![CDATA[Reacted]]></fieldDescription>
+	</field>
+	<variable name="varCurrentDate" class="java.util.Calendar">
+		<variableExpression><![CDATA[($V{varCurrentDate} != null) ? $V{varCurrentDate} : java.util.Calendar.getInstance()]]></variableExpression>
+		<initialValueExpression><![CDATA[]]></initialValueExpression>
+	</variable>
+	<title>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c922f4dd-8e39-41c6-a5ff-d6f7e54e46f3" x="191" y="0" width="172" height="20" forecolor="#0000FF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Evaluation Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="e9e7580d-cbb2-4eb0-a86e-7dfdc47038b2" x="139" y="13" width="100" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Initiator Molecule]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5393de3f-b055-417d-a0ae-ef4f762ad486" x="300" y="13" width="100" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Monomers Reacted]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="3642f6fd-49cf-4608-b8f3-2e3913a3b664" x="17" y="33" width="520" height="1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField pattern="#,##0">
+				<reportElement uuid="56f53503-bbc8-467d-b91c-059794651da5" x="172" y="0" width="67" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.valueOf($F{Initiator})]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement uuid="0e78ed5a-17cc-4fc7-a5ed-311b458822a5" x="333" y="0" width="67" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.valueOf($F{Reacted})]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="cc88f76f-59fd-4e06-9af8-cfe3a6f6b5e5" x="243" y="0" width="68" height="10" forecolor="#0000FF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PolyJen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="29e69ba3-ac28-453c-b668-23acd9d6c868" x="176" y="10" width="203" height="10" forecolor="#0000FF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Polymerization in a Digital Laboratory]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="836824b1-d1ca-4a39-89c7-dab3b6e38c1c" x="86" y="20" width="383" height="10" forecolor="#0000FF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Copyright© 2003-" + Integer.toString($V{varCurrentDate}.get(Calendar.YEAR)) + " Beowurks. All rights reserved."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e84bc53e-a910-494a-83bb-e175728cca21" x="190" y="37" width="100" height="16" forecolor="#0000FF"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}.toString() + " out of "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="da763a03-710b-46e1-939e-16d69a419019" x="290" y="37" width="100" height="16" forecolor="#0000FF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

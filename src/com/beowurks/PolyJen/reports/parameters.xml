@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ PolyJen: a program that predicts chain-growth polymerization (specifically oxyalkylation)
+  ~          reactions and minimizes expensive laboratory experimentation.
+  ~
+  ~ Copyright(c) 2003-2018, Beowurks.
+  ~ License: Eclipse Public License - v 2.0 (https://www.eclipse.org/legal/epl-2.0/)
+  ~
+  -->
+
+<ParameterData>
+  <Records>
+    <Title>Sample - NRE 1</Title>
+    <InitiatorMolecules>10000</InitiatorMolecules>
+    <MWofInitiator>200.0</MWofInitiator>
+    <MWofMonomer>44.0</MWofMonomer>
+    <PolymerSites>1</PolymerSites>
+    <ReactionLevels>1</ReactionLevels>
+    <CreatedBy>Eddie Fann</CreatedBy>
+    <CreatedOn>Fri Oct 14 12:17:56 CDT 2005</CreatedOn>
+    <ModifiedBy>Eddie Fann</ModifiedBy>
+    <ModifiedOn>Fri Oct 14 12:17:56 CDT 2005</ModifiedOn>
+    <SiteNo>1</SiteNo>
+    <LevelNo>1</LevelNo>
+    <MonomersReacted>90000</MonomersReacted>
+    <MonomerReaction>First</MonomerReaction>
+    <ReactionRate>0.4%</ReactionRate>
+  </Records>
+  <Records>
+    <Title>Sample - NRE 1</Title>
+    <InitiatorMolecules>10000</InitiatorMolecules>
+    <MWofInitiator>200.0</MWofInitiator>
+    <MWofMonomer>44.0</MWofMonomer>
+    <PolymerSites>1</PolymerSites>
+    <ReactionLevels>1</ReactionLevels>
+    <CreatedBy>Eddie Fann</CreatedBy>
+    <CreatedOn>Fri Oct 14 12:17:56 CDT 2005</CreatedOn>
+    <ModifiedBy>Eddie Fann</ModifiedBy>
+    <ModifiedOn>Fri Oct 14 12:17:56 CDT 2005</ModifiedOn>
+    <SiteNo>1</SiteNo>
+    <LevelNo>1</LevelNo>
+    <MonomersReacted>90000</MonomersReacted>
+    <MonomerReaction>2</MonomerReaction>
+    <ReactionRate>0.6%</ReactionRate>
+  </Records>
+  <Records>
+    <Title>Sample - NRE 1</Title>
+    <InitiatorMolecules>10000</InitiatorMolecules>
+    <MWofInitiator>200.0</MWofInitiator>
+    <MWofMonomer>44.0</MWofMonomer>
+    <PolymerSites>1</PolymerSites>
+    <ReactionLevels>1</ReactionLevels>
+    <CreatedBy>Eddie Fann</CreatedBy>
+    <CreatedOn>Fri Oct 14 12:17:56 CDT 2005</CreatedOn>
+    <ModifiedBy>Eddie Fann</ModifiedBy>
+    <ModifiedOn>Fri Oct 14 12:17:56 CDT 2005</ModifiedOn>
+    <SiteNo>1</SiteNo>
+    <LevelNo>1</LevelNo>
+    <MonomersReacted>90000</MonomersReacted>
+    <MonomerReaction>3</MonomerReaction>
+    <ReactionRate>0.6%</ReactionRate>
+  </Records>
+  <Records>
+    <Title>Sample - NRE 1</Title>
+    <InitiatorMolecules>10000</InitiatorMolecules>
+    <MWofInitiator>200.0</MWofInitiator>
+    <MWofMonomer>44.0</MWofMonomer>
+    <PolymerSites>1</PolymerSites>
+    <ReactionLevels>1</ReactionLevels>
+    <CreatedBy>Eddie Fann</CreatedBy>
+    <CreatedOn>Fri Oct 14 12:17:56 CDT 2005</CreatedOn>
+    <ModifiedBy>Eddie Fann</ModifiedBy>
+    <ModifiedOn>Fri Oct 14 12:17:56 CDT 2005</ModifiedOn>
+    <SiteNo>1</SiteNo>
+    <LevelNo>1</LevelNo>
+    <MonomersReacted>90000</MonomersReacted>
+    <MonomerReaction>4</MonomerReaction>
+    <ReactionRate>0.6%</ReactionRate>
+  </Records>
+  <Records>
+    <Title>Sample - NRE 1</Title>
+    <InitiatorMolecules>10000</InitiatorMolecules>
+    <MWofInitiator>200.0</MWofInitiator>
+    <MWofMonomer>44.0</MWofMonomer>
+    <PolymerSites>1</PolymerSites>
+    <ReactionLevels>1</ReactionLevels>
+    <CreatedBy>Eddie Fann</CreatedBy>
+    <CreatedOn>Fri Oct 14 12:17:56 CDT 2005</CreatedOn>
+    <ModifiedBy>Eddie Fann</ModifiedBy>
+    <ModifiedOn>Fri Oct 14 12:17:56 CDT 2005</ModifiedOn>
+    <SiteNo>1</SiteNo>
+    <LevelNo>1</LevelNo>
+    <MonomersReacted>90000</MonomersReacted>
+    <MonomerReaction>5</MonomerReaction>
+    <ReactionRate>0.4%</ReactionRate>
+  </Records>
+  <Records>
+    <Title>Sample - NRE 1</Title>
+    <InitiatorMolecules>10000</InitiatorMolecules>
+    <MWofInitiator>200.0</MWofInitiator>
+    <MWofMonomer>44.0</MWofMonomer>
+    <PolymerSites>1</PolymerSites>
+    <ReactionLevels>1</ReactionLevels>
+    <CreatedBy>Eddie Fann</CreatedBy>
+    <CreatedOn>Fri Oct 14 12:17:56 CDT 2005</CreatedOn>
+    <ModifiedBy>Eddie Fann</ModifiedBy>
+    <ModifiedOn>Fri Oct 14 12:17:56 CDT 2005</ModifiedOn>
+    <SiteNo>1</SiteNo>
+    <LevelNo>1</LevelNo>
+    <MonomersReacted>90000</MonomersReacted>
+    <MonomerReaction>Final</MonomerReaction>
+    <ReactionRate>0.3%</ReactionRate>
+  </Records>
+</ParameterData>
