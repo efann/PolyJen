@@ -809,7 +809,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
       final String lcTitleURL = "http://polyjen.sourceforge.net/";
 
       //Polymerization in a digital laboratory
-      final IAbout loAbout = new AboutAdapter(Util.getTitle(), lcTitleURL, loLogo, lcTitleURL, "Eclipse Public License 1.0", "http://opensource.org/licenses/eclipse-1.0.php", 2003, "Beowurks", "https://www.beowurks.com/");
+      final IAbout loAbout = new AboutAdapter(Util.getTitle(), lcTitleURL, loLogo, lcTitleURL, "Eclipse Public License 2.0", "https://www.eclipse.org/legal/epl-2.0/", 2003, "Beowurks", "https://www.beowurks.com/");
 
       new DialogAbout(BaseFrame.getActiveFrame(), loAbout);
     }
