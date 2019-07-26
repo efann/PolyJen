@@ -2,7 +2,7 @@
  * PolyJen: a program that predicts chain-growth polymerization (specifically oxyalkylation)
  *          reactions and minimizes expensive laboratory experimentation.
  *
- * Copyright(c) 2003-2018, Beowurks.
+ * Copyright(c) 2003-2019, Beowurks.
  * License: Eclipse Public License - v 2.0 (https://www.eclipse.org/legal/epl-2.0/)
  *
  */
