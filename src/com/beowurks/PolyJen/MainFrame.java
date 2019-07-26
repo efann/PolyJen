@@ -19,11 +19,13 @@ import com.beowurks.BeoCommon.Dialogs.Credits.CreditAdapter;
 import com.beowurks.BeoCommon.Dialogs.Credits.DialogCredits;
 import com.beowurks.BeoCommon.Dialogs.Credits.ICredit;
 import com.beowurks.BeoCommon.Util;
+import com.beowurks.BeoDesktop.DesktopHelper;
+import com.beowurks.BeoDesktop.IDesktopAdapter;
 import com.beowurks.BeoLookFeel.LFCommon;
 import com.beowurks.BeoLookFeel.LFDialog;
-import com.beowurks.apple.eawt.IOSXAdapter;
-import com.beowurks.apple.eawt.OSXAdapterHelper;
 
+import javax.imageio.ImageIO;
+import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -43,24 +45,10 @@ import java.awt.event.WindowFocusListener;
 import java.awt.image.BufferedImage;
 import java.util.Vector;
 
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JDesktopPane;
-import javax.swing.JInternalFrame;
-import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JToolBar;
-import javax.swing.KeyStroke;
-import javax.swing.SwingConstants;
-import javax.swing.SwingUtilities;
-
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------
-public class MainFrame extends PolyJenBaseFrame implements ActionListener, MouseMotionListener, WindowFocusListener, Runnable, IOSXAdapter
+public class MainFrame extends PolyJenBaseFrame implements ActionListener, MouseMotionListener, WindowFocusListener, Runnable, IDesktopAdapter
 {
   protected ListComponents foListComponents = null;
 
@@ -171,9 +159,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
 
     this.getContentPane().add(this.tlbPolyJen1, BorderLayout.NORTH);
 
-    // Only sets up if running on a Mac.
-    OSXAdapterHelper.setupOSXAdapter(this);
-
+    DesktopHelper.setupDesktop(this);
   }
 
   // ---------------------------------------------------------------------------
@@ -971,6 +957,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
   // ---------------------------------------------------------------------------
   // ---------------------------------------------------------------------------
   // Interface WindowFocusListener
+  // ---------------------------------------------------------------------------
   @Override
   public void windowGainedFocus(final WindowEvent toEvent)
   {
@@ -995,8 +982,8 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
 
   // ---------------------------------------------------------------------------
   // ---------------------------------------------------------------------------
-  // Interface IOSXAdapter
-  // These routines are only called when a user selects from Mac OS X application menu.
+  // Interface IDesktopAdapter
+  // ---------------------------------------------------------------------------
   @Override
   public void AboutHandler()
   {
@@ -1005,23 +992,16 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
 
   // ---------------------------------------------------------------------------
   @Override
-  public void FileHandler(final String tcFileName)
-  {
-    this.launchPolymerizationInternalFrame();
-  }
-
-  // ---------------------------------------------------------------------------
-  @Override
   public void PreferencesHandler()
   {
-    Util.infoMessage(this, "Currently, there are not any preferences for this program.");
+
   }
 
   // ---------------------------------------------------------------------------
   @Override
   public void QuitHandler()
   {
-    this.performShutdownMaintenance();
+
   }
 
   // ---------------------------------------------------------------------------

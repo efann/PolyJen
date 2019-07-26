@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="BeoBasis">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libraries/BeoBasis/BeoBasis-1.35-unsigned.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../BeoBasis/BeoBasis-unsigned.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
