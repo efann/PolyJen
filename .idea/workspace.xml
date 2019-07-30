@@ -7,72 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="395dfbfa-4022-438e-b22a-3b3634323a49" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Data/samp00001.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp00001.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp00002.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp00002.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp00003.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp00003.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp00004.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp00004.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp00005.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp00005.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp00006.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp00006.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp00007.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp00007.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp00008.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp00008.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp00009.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp00009.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp0000a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp0000a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp0000b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp0000b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp0000c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp0000c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp0000d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp0000d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp0000e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp0000e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp00001.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp00001.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp00002.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp00002.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp00003.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp00003.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp00004.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp00004.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp00005.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp00005.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp00006.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp00006.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp00007.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp00007.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp00008.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp00008.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp00009.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp00009.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp0000a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp0000a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp0000b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp0000b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp0000c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp0000c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp0000d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp0000d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleData/samp0000e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleData/samp0000e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ant/ManifestUpdate-Manual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ant/ManifestUpdate-Manual.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ant/SignApplication-Manual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ant/SignApplication-Manual.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jnlp/PolyJen.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/jnlp/PolyJen.jnlp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/AppProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/AppProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/BaseAbstractSeriesDataset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/BaseAbstractSeriesDataset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Calculations1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Calculations1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ChartButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ChartButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Evaluate1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Evaluate1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/FileFilterExports.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/FileFilterExports.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Global.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/JRViewerBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/JRViewerBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ListComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ListComponents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolyJenBaseDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolyJenBaseDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolyJenBaseFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolyJenBaseFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolyJenBaseInternalFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolyJenBaseInternalFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolymerParametersXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolymerParametersXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Polymerization1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Polymerization1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolymerizationEdit1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolymerizationEdit1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportCalculations1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportCalculations1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportEvaluation1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportEvaluation1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportParameters1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportParameters1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ZipExtraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ZipExtraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ZipTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ZipTesting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Calculations1.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Calculations1.jrxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Evaluation1.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Evaluation1.jrxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Parameters1.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Parameters1.jrxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/calculations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/calculations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/evaluation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/evaluation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/parameters.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/parameters.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PolyJen_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/PolyJen_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,12 +49,22 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="ant/polyjen" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BeoBasis/BeoBasis-unsigned.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ant/polyjen.xml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="aBeowurks" />
@@ -190,6 +150,11 @@
       <workItem from="1523459488429" duration="38000" />
       <workItem from="1563306691056" duration="173000" />
       <workItem from="1564162159352" duration="831000" />
+      <workItem from="1564180796061" duration="13000" />
+      <workItem from="1564247246569" duration="242000" />
+      <workItem from="1564254689558" duration="43000" />
+      <workItem from="1564254743500" duration="221000" />
+      <workItem from="1564427666604" duration="4198000" />
     </task>
     <servers />
   </component>
@@ -201,7 +166,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -1,6 +1,12 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="PolyJen:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/PolyJen</output-path>
+    <properties id="ant-postprocessing">
+      <options enabled="true">
+        <file>file://$PROJECT_DIR$/ant/SignApplication-Manual.xml</file>
+        <target>build</target>
+      </options>
+    </properties>
     <properties id="ant-preprocessing">
       <options enabled="true">
         <file>file://$PROJECT_DIR$/ant/ManifestUpdate-Manual.xml</file>
