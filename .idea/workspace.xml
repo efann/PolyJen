@@ -9,6 +9,8 @@
     <list default="true" id="395dfbfa-4022-438e-b22a-3b3634323a49" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/PolyJen_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/PolyJen_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ant/ManifestUpdate-Manual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ant/ManifestSetupUpdate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ant/SignApplication-Manual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ant/SignApplication.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,6 +66,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -154,7 +157,10 @@
       <workItem from="1564247246569" duration="242000" />
       <workItem from="1564254689558" duration="43000" />
       <workItem from="1564254743500" duration="221000" />
-      <workItem from="1564427666604" duration="4198000" />
+      <workItem from="1564427666604" duration="5649000" />
+      <workItem from="1564505430297" duration="8000" />
+      <workItem from="1564505569693" duration="11000" />
+      <workItem from="1564506960715" duration="3679000" />
     </task>
     <servers />
   </component>

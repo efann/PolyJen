@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+
+<!--
+  ~ PolyJen: a program that predicts chain-growth polymerization (specifically oxyalkylation)
+  ~          reactions and minimizes expensive laboratory experimentation.
+  ~
+  ~ Copyright(c) 2003-2019, Beowurks.
+  ~ License: Eclipse Public License - v 2.0 (https://www.eclipse.org/legal/epl-2.0/)
+  ~
+  -->
+
+<project name="ManifestUpdate-Manual" default="build" basedir="..//">
+
+  <property name="dirs.base" value="${basedir}"/>
+
+  <property name="Beo.Title" value="PolyJen"/>
+  <property name="Beo.Version" value="2019.0.6"/>
+  <property name="Beo.Vendor" value="Beowurks"/>
+  <property name="Beo.AppClass" value="com.beowurks.PolyJen.Application"/>
+
+  <property name="Beo.Install4J" value="${dirs.base}/install/install.install4j"/>
+
+  <tstamp>
+    <format property="build.time.isoformat" pattern="yyyy-MM-dd HH:mm:ss"/>
+  </tstamp>
+
+  <target depends="buildManifest" name="build"/>
+
+  <!-- Recreate the manifest for the project -->
+  <target name="buildManifest">
+    <manifest file="${dirs.base}/src/META-INF/MANIFEST.MF">
+      <attribute name="Manifest-Version" value="1.0"/>
+      <attribute name="Main-Class" value="${Beo.AppClass}"/>
+      <attribute name="Implementation-Vendor" value="${Beo.Vendor}"/>
+      <attribute name="Implementation-Version" value="${Beo.Version}"/>
+      <attribute name="Implementation-Title" value="${Beo.Title}"/>
+      <attribute name="Built-On" value="${build.time.isoformat}"/>
+      <attribute name="Permissions" value="all-permissions"/>
+    </manifest>
+  </target>
+
+  <target name="updateXMLValues">
+    <!--
+        You can use JavaScript in Ant! Woah!!!!!!!!!!!!
+        And combine with Java libraries!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    -->
+    <script language="javascript">
+      <![CDATA[
+
+        // From https://stackoverflow.com/questions/22503100/java-8-javascript-engine-backwards-compatibility
+        load("nashorn:mozilla_compat.js");
+
+        // Here's more information: https://ant.apache.org/manual/Tasks/script.html
+        importClass(java.io.StringReader);
+
+        importClass(Packages.org.xml.sax.InputSource);
+        importClass(Packages.javax.xml.parsers.DocumentBuilderFactory);
+        importClass(Packages.javax.xml.parsers.DocumentBuilder);
+        importClass(Packages.org.w3c.dom.Document);
+        importClass(Packages.org.w3c.dom.NodeList);
+        importClass(Packages.org.w3c.dom.Node);
+        importClass(Packages.org.w3c.dom.Element);
+
+        var loDBFactory = DocumentBuilderFactory.newInstance();
+	      var loDocBuilder = loDBFactory.newDocumentBuilder();
+
+		    var loDoc = loDocBuilder.parse(new InputSource(new StringReader(ManifestSetupUpdate.getProperty("Beo.Install4J"))));
+
+        var lcAppClass = 'unknown';
+        var lcTitle = 'unknown';
+        var lcVersion = 'unknown';
+        var lcVendor = 'unknown';
+
+        var loNodeList = loDoc.getElementsByTagName("option");
+        var lnCount = loNodeList.getLength();
+        for (var i = 0; i < lnCount; i++)
+        {
+          var loNode = loNodeList.item(i);
+
+          var lcName = loNode.getAttributes().getNamedItem('name').getValue();
+          if (lcName)
+          {
+            switch (lcName)
+            {
+              case 'appClass':
+                lcAppClass = loNode.getAttributes().getNamedItem('value').getValue();
+                break;
+              case 'title':
+                lcTitle = loNode.getAttributes().getNamedItem('value').getValue();
+                break;
+              case 'version':
+                lcVersion = loNode.getAttributes().getNamedItem('value').getValue();
+                break;
+              case 'vendor':
+                lcVendor = loNode.getAttributes().getNamedItem('value').getValue();
+                break;
+            }
+          }
+        }
+
+        ManifestSetupUpdate.setProperty("Beo.Title", lcTitle);
+        ManifestSetupUpdate.setProperty("Beo.Version", lcVersion);
+        ManifestSetupUpdate.setProperty("Beo.Vendor", lcVendor);
+        ManifestSetupUpdate.setProperty("Beo.AppClass", lcAppClass);
+      ]]>
+    </script>
+
+  </target>
+
+</project>

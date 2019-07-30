@@ -3,19 +3,19 @@
     <output-path>$PROJECT_DIR$/out/artifacts/PolyJen</output-path>
     <properties id="ant-postprocessing">
       <options enabled="true">
-        <file>file://$PROJECT_DIR$/ant/SignApplication-Manual.xml</file>
+        <file>file://$PROJECT_DIR$/ant/SignApplication.xml</file>
         <target>build</target>
       </options>
     </properties>
     <properties id="ant-preprocessing">
       <options enabled="true">
-        <file>file://$PROJECT_DIR$/ant/ManifestUpdate-Manual.xml</file>
+        <file>file://$PROJECT_DIR$/ant/ManifestSetupUpdate.xml</file>
         <target>build</target>
       </options>
     </properties>
     <root id="archive" name="PolyJen.jar">
       <element id="module-output" name="PolyJen" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/BeoBasis/BeoBasis-1.35-unsigned.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../BeoBasis/BeoBasis-unsigned.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libraries/jasper-reports/barcode4j-2.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libraries/jasper-reports/batik-anim.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libraries/jasper-reports/batik-awt-util.jar" path-in-jar="/" />
