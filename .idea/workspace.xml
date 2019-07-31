@@ -9,7 +9,6 @@
     <list default="true" id="395dfbfa-4022-438e-b22a-3b3634323a49" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/install/install.install4j" beforeDir="false" afterPath="$PROJECT_DIR$/install/install.install4j" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Application.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +159,7 @@
       <workItem from="1564505569693" duration="11000" />
       <workItem from="1564506960715" duration="8835000" />
       <workItem from="1564585662868" duration="1468000" />
-      <workItem from="1564587705273" duration="8819000" />
+      <workItem from="1564587705273" duration="10226000" />
     </task>
     <servers />
   </component>
