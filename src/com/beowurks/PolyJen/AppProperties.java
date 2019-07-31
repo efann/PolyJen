@@ -44,7 +44,7 @@ public class AppProperties extends BaseProperties
   // ---------------------------------------------------------------------------
   public String getLookAndFeel()
   {
-    return (this.getProperty(AppProperties.LOOKANDFEEL, "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"));
+    return (this.getProperty(AppProperties.LOOKANDFEEL, "com.sun.java.swing.plaf.windows.WindowsLookAndFeel"));
   }
 
   // ---------------------------------------------------------------------------

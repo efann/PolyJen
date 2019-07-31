@@ -27,7 +27,7 @@
       <vmOptionsFile mode="none" overwriteMode="1" />
     </launcher>
   </launchers>
-  <installerGui>
+  <installerGui suggestPreviousLocations="false">
     <applications>
       <application id="installer" beanClass="com.install4j.runtime.beans.applications.InstallerApplication">
         <startup>
