@@ -7,10 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="395dfbfa-4022-438e-b22a-3b3634323a49" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PolyJen_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/PolyJen_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ant/ManifestUpdate-Manual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ant/ManifestSetupUpdate.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ant/SignApplication-Manual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ant/SignApplication.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ant/ManifestSetupUpdate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ant/ManifestSetupUpdate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/install.install4j" beforeDir="false" afterPath="$PROJECT_DIR$/install/install.install4j" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,7 +71,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="aBeowurks" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -160,7 +160,9 @@
       <workItem from="1564427666604" duration="5649000" />
       <workItem from="1564505430297" duration="8000" />
       <workItem from="1564505569693" duration="11000" />
-      <workItem from="1564506960715" duration="3679000" />
+      <workItem from="1564506960715" duration="8835000" />
+      <workItem from="1564585662868" duration="1468000" />
+      <workItem from="1564587705273" duration="6540000" />
     </task>
     <servers />
   </component>

@@ -9,14 +9,9 @@
   ~
   -->
 
-<project name="ManifestUpdate-Manual" default="build" basedir="..//">
+<project name="ManifestSetupUpdate" default="build" basedir="..//">
 
   <property name="dirs.base" value="${basedir}"/>
-
-  <property name="Beo.Title" value="PolyJen"/>
-  <property name="Beo.Version" value="2019.0.6"/>
-  <property name="Beo.Vendor" value="Beowurks"/>
-  <property name="Beo.AppClass" value="com.beowurks.PolyJen.Application"/>
 
   <property name="Beo.Install4J" value="${dirs.base}/install/install.install4j"/>
 
@@ -24,7 +19,29 @@
     <format property="build.time.isoformat" pattern="yyyy-MM-dd HH:mm:ss"/>
   </tstamp>
 
-  <target depends="buildManifest" name="build"/>
+  <target depends="getInformation, buildManifest" name="build"/>
+
+  <target name="getInformation">
+    <xmlproperty file="${Beo.Install4J}" collapseAttributes="true" prefix="Prefix"/>
+    <!--
+      Ignore the red highlights that state ${Prefix.*} do not exist.
+    -->
+    <property name="Beo.Title" value="${Prefix.install4j.application.shortName}"/>
+    <property name="Beo.Version" value="${Prefix.install4j.application.version}"/>
+    <property name="Beo.Vendor" value="${Prefix.install4j.application.publisher}"/>
+    <property name="Beo.AppClass" value="${Prefix.install4j.launchers.launcher.java.mainClass}"/>
+
+    <echo>Title from install4j: ${Beo.Title}</echo>
+    <echo>Version from install4j: ${Beo.Version}</echo>
+    <echo>Vendor from install4j: ${Beo.Vendor}</echo>
+    <echo>App Class from install4j: ${Beo.AppClass}</echo>
+
+    <condition property="bad-class">
+      <contains substring="," string="${Beo.AppClass}"/>
+    </condition>
+    <fail message="Beo.AppClass has commas due to multiple launchers.launcher.java.mainClass: ${Beo.AppClass}"
+          if="bad-class"/>
+  </target>
 
   <!-- Recreate the manifest for the project -->
   <target name="buildManifest">
@@ -37,74 +54,6 @@
       <attribute name="Built-On" value="${build.time.isoformat}"/>
       <attribute name="Permissions" value="all-permissions"/>
     </manifest>
-  </target>
-
-  <target name="updateXMLValues">
-    <!--
-        You can use JavaScript in Ant! Woah!!!!!!!!!!!!
-        And combine with Java libraries!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    -->
-    <script language="javascript">
-      <![CDATA[
-
-        // From https://stackoverflow.com/questions/22503100/java-8-javascript-engine-backwards-compatibility
-        load("nashorn:mozilla_compat.js");
-
-        // Here's more information: https://ant.apache.org/manual/Tasks/script.html
-        importClass(java.io.StringReader);
-
-        importClass(Packages.org.xml.sax.InputSource);
-        importClass(Packages.javax.xml.parsers.DocumentBuilderFactory);
-        importClass(Packages.javax.xml.parsers.DocumentBuilder);
-        importClass(Packages.org.w3c.dom.Document);
-        importClass(Packages.org.w3c.dom.NodeList);
-        importClass(Packages.org.w3c.dom.Node);
-        importClass(Packages.org.w3c.dom.Element);
-
-        var loDBFactory = DocumentBuilderFactory.newInstance();
-	      var loDocBuilder = loDBFactory.newDocumentBuilder();
-
-		    var loDoc = loDocBuilder.parse(new InputSource(new StringReader(ManifestSetupUpdate.getProperty("Beo.Install4J"))));
-
-        var lcAppClass = 'unknown';
-        var lcTitle = 'unknown';
-        var lcVersion = 'unknown';
-        var lcVendor = 'unknown';
-
-        var loNodeList = loDoc.getElementsByTagName("option");
-        var lnCount = loNodeList.getLength();
-        for (var i = 0; i < lnCount; i++)
-        {
-          var loNode = loNodeList.item(i);
-
-          var lcName = loNode.getAttributes().getNamedItem('name').getValue();
-          if (lcName)
-          {
-            switch (lcName)
-            {
-              case 'appClass':
-                lcAppClass = loNode.getAttributes().getNamedItem('value').getValue();
-                break;
-              case 'title':
-                lcTitle = loNode.getAttributes().getNamedItem('value').getValue();
-                break;
-              case 'version':
-                lcVersion = loNode.getAttributes().getNamedItem('value').getValue();
-                break;
-              case 'vendor':
-                lcVendor = loNode.getAttributes().getNamedItem('value').getValue();
-                break;
-            }
-          }
-        }
-
-        ManifestSetupUpdate.setProperty("Beo.Title", lcTitle);
-        ManifestSetupUpdate.setProperty("Beo.Version", lcVersion);
-        ManifestSetupUpdate.setProperty("Beo.Vendor", lcVendor);
-        ManifestSetupUpdate.setProperty("Beo.AppClass", lcAppClass);
-      ]]>
-    </script>
-
   </target>
 
 </project>
