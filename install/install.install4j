@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <install4j version="8.0.1" transformSequenceNumber="8">
-  <directoryPresets config="D:/IntelliJ/PolyJen/out/artifacts/PolyJen/PolyJen.jar" />
+  <directoryPresets config="D:/IntelliJ/PolyJen/install" />
   <application name="PolyJen" applicationId="3454-8634-3733-0403" mediaDir="D:/temp/install4j/PolyJen/media" shortName="PolyJen" publisher="Beowurks" publisherWeb="https://www.beowurks.com/applications/single/PolyJen" version="2019.0.6" macVolumeId="704ca49a6335aefd" javaMinVersion="12" javaMaxVersion="12">
+    <languages>
+      <principalLanguage id="en" customLocalizationFile="D:/IntelliJ/PolyJen/install/English.utf8" />
+    </languages>
     <codeSigning windowsEnabled="true" windowsKeySource="windows">
       <windowsKeystoreIdentifier issuer="Sectigo RSA Code Signing CA" serial="83b2b0638de0f944f6bf5c4bbf6ffa94" subject="Beowurks" />
     </codeSigning>
@@ -30,6 +33,10 @@
   <installerGui>
     <applications>
       <application id="installer" beanClass="com.install4j.runtime.beans.applications.InstallerApplication">
+        <serializedBean>
+          <property name="frameHeight" type="int" value="480" />
+          <property name="frameWidth" type="int" value="600" />
+        </serializedBean>
         <startup>
           <screen id="1" beanClass="com.install4j.runtime.beans.screens.StartupScreen" rollbackBarrierExitCode="0">
             <actions>
@@ -80,6 +87,39 @@ return console.askOkCancel(message, true);
                 <serializedBean>
                   <property name="labelText" type="string">${i18n:ClickNext}</property>
                 </serializedBean>
+              </formComponent>
+            </formComponents>
+          </screen>
+          <screen id="425" beanClass="com.install4j.runtime.beans.screens.LicenseScreen" rollbackBarrierExitCode="0">
+            <formComponents>
+              <formComponent id="426" beanClass="com.install4j.runtime.beans.formcomponents.MultilineLabelComponent">
+                <serializedBean>
+                  <property name="labelText" type="string">${i18n:LicenseLabel3}</property>
+                </serializedBean>
+              </formComponent>
+              <formComponent id="427" beanClass="com.install4j.runtime.beans.formcomponents.LicenseComponent" useExternalParametrization="true" externalParametrizationName="License Agreement" externalParametrizationMode="include">
+                <serializedBean>
+                  <property name="displayedTextFile" id="LocalizedExternalFile0">
+                    <property name="languageIdToExternalFile">
+                      <entry>
+                        <string>en</string>
+                        <object class="com.install4j.api.beans.ExternalFile">
+                          <string>D:/IntelliJ/PolyJen/license/EclipsePublicLicense-Version2.0.html</string>
+                        </object>
+                      </entry>
+                    </property>
+                  </property>
+                  <property name="fillVertical" type="boolean" value="true" />
+                  <property name="readAllRequired" type="boolean" value="true" />
+                </serializedBean>
+                <externalParametrizationPropertyNames>
+                  <propertyName>textSource</propertyName>
+                  <propertyName>displayedText</propertyName>
+                  <propertyName>displayedTextFile</propertyName>
+                  <propertyName>variableName</propertyName>
+                  <propertyName>acceptInitiallySelected</propertyName>
+                  <propertyName>readAllRequired</propertyName>
+                </externalParametrizationPropertyNames>
               </formComponent>
             </formComponents>
           </screen>
@@ -291,7 +331,6 @@ return console.askYesNo(message, true);
               <formComponent name="Watermark" id="39" beanClass="com.install4j.runtime.beans.formcomponents.SeparatorComponent" insetTop="0" insetLeft="5" insetBottom="0" useExternalParametrization="true" externalParametrizationName="Custom watermark" externalParametrizationMode="include">
                 <serializedBean>
                   <property name="enabledTitleText" type="boolean" value="false" />
-                  <property name="labelText" type="string">install4j</property>
                 </serializedBean>
                 <externalParametrizationPropertyNames>
                   <propertyName>labelText</propertyName>

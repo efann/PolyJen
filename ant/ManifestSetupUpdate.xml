@@ -22,19 +22,23 @@
   <target depends="getInformation, buildManifest" name="build"/>
 
   <target name="getInformation">
+    <echo message="===================================================================" level="info" />
+    <echo message="REMEMBER: You're pulling these values from install4j settings file." level="info" />
+    <echo message="===================================================================" level="info" />
+
     <xmlproperty file="${Beo.Install4J}" collapseAttributes="true" prefix="Prefix"/>
     <!--
-      Ignore the red highlights that state ${Prefix.*} do not exist.
+      Ignore the red highlights that state ${Prefix.*} do not exist: they exist inside the XML file.
     -->
     <property name="Beo.Title" value="${Prefix.install4j.application.shortName}"/>
     <property name="Beo.Version" value="${Prefix.install4j.application.version}"/>
     <property name="Beo.Vendor" value="${Prefix.install4j.application.publisher}"/>
     <property name="Beo.AppClass" value="${Prefix.install4j.launchers.launcher.java.mainClass}"/>
 
-    <echo>Title from install4j: ${Beo.Title}</echo>
-    <echo>Version from install4j: ${Beo.Version}</echo>
-    <echo>Vendor from install4j: ${Beo.Vendor}</echo>
-    <echo>App Class from install4j: ${Beo.AppClass}</echo>
+    <echo message="Title from install4j: ${Beo.Title}" level="info"/>
+    <echo message="Version from install4j: ${Beo.Version}" level="info"/>
+    <echo message="Vendor from install4j: ${Beo.Vendor}" level="info"/>
+    <echo message="App Class from install4j: ${Beo.AppClass}" level="info"/>
 
     <condition property="bad-class">
       <contains substring="," string="${Beo.AppClass}"/>
