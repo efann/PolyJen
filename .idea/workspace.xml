@@ -8,8 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="395dfbfa-4022-438e-b22a-3b3634323a49" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ant/ManifestSetupUpdate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ant/ManifestSetupUpdate.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jnlp/PolyJen.jnlp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/MainFrame.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,6 +161,7 @@
       <workItem from="1564506960715" duration="8835000" />
       <workItem from="1564585662868" duration="1468000" />
       <workItem from="1564587705273" duration="12336000" />
+      <workItem from="1564671190552" duration="1998000" />
     </task>
     <servers />
   </component>

@@ -88,14 +88,12 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
 
   private final JMenuItem menuLookFeel1 = new JMenuItem();
   private final JMenuItem menuSampleData1 = new JMenuItem();
-  private final JMenuItem menuJavaManager1 = new JMenuItem();
 
   private final JMenuItem menuCascade1 = new JMenuItem();
   private final JMenuItem menuCloseAll1 = new JMenuItem();
 
   private final JMenuItem menuCredits1 = new JMenuItem();
   private final JMenuItem menuDocumentationPDF1 = new JMenuItem();
-  private final JMenuItem menuDocumentationHTM1 = new JMenuItem();
   private final JMenuItem menuAbout1 = new JMenuItem();
 
   private boolean flFirstTime = true;
@@ -307,10 +305,6 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     this.menuSampleData1.setToolTipText(Global.MENU_SAMPLES_HINT);
     this.menuSampleData1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/download32.png")));
 
-    this.menuJavaManager1.setText(Global.MENU_JAVAMANAGER);
-    this.menuJavaManager1.setToolTipText(Global.MENU_JAVAMANAGER_HINT);
-    this.menuJavaManager1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/coffee32.png")));
-
     // ----
     this.menuWindow1.setText("Window");
     this.menuWindow1.setMnemonic('W');
@@ -337,11 +331,6 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     this.menuDocumentationPDF1.setToolTipText(Global.MENU_HELP_DOCUMENTATION_PDF_HINT);
     this.menuDocumentationPDF1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0));
     this.menuDocumentationPDF1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/help32.png")));
-
-    this.menuDocumentationHTM1.setText(Global.MENU_HELP_DOCUMENTATION_HTM);
-    this.menuDocumentationHTM1.setMnemonic(Global.MENU_HELP_DOCUMENTATION_HTM_MNEMONIC);
-    this.menuDocumentationHTM1.setToolTipText(Global.MENU_HELP_DOCUMENTATION_HTM_HINT);
-    this.menuDocumentationHTM1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/help32.png")));
 
     this.menuAbout1.setText(Global.MENU_ABOUT);
     this.menuAbout1.setMnemonic(Global.MENU_ABOUT_MNEMONIC);
@@ -386,18 +375,14 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     }
     this.menuTools1.add(this.menuSampleData1);
     this.menuTools1.addSeparator();
-    this.menuTools1.add(this.menuJavaManager1);
 
     this.menuWindow1.add(this.menuCascade1);
     this.menuWindow1.add(this.menuCloseAll1);
 
     this.menuHelp1.add(this.menuCredits1);
-    this.menuHelp1.addSeparator();
     this.menuHelp1.add(this.menuDocumentationPDF1);
-    this.menuHelp1.add(this.menuDocumentationHTM1);
     if (!Util.isMacintosh())
     {
-      this.menuHelp1.addSeparator();
       this.menuHelp1.add(this.menuAbout1);
     }
 
@@ -756,10 +741,6 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     {
       this.downloadSampleData();
     }
-    else if (loObject == this.menuJavaManager1)
-    {
-      Util.launchJavaApplicationManager();
-    }
     else if (loObject == this.menuCascade1)
     {
       Util.cascadeWindows(this.pnlGradientDesktop);
@@ -774,11 +755,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     }
     else if (loObject == this.menuDocumentationPDF1)
     {
-      Util.launchBrowser("https://www.beowurks.com/Software/PolyJen/Help/Documentation.pdf");
-    }
-    else if (loObject == this.menuDocumentationHTM1)
-    {
-      Util.launchBrowser("https://www.beowurks.com/Software/PolyJen/Help/Documentation.html");
+      Util.launchBrowser("https://1drv.ms/b/s!Ak4RMu0v512Wgck10wFfQQ9RE8jJmQ");
     }
     else if (loObject == this.menuAbout1)
     {
@@ -811,6 +788,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     final Vector<ICredit> loVectorLinks = new Vector<>();
 
     loVectorLinks.add(new CreditAdapter("The theory behind PolyJen was developed by Dr. Edward Nieh.", "https://www.facebook.com/edward.nieh.78759"));
+    loVectorLinks.add(new CreditAdapter("For installations, PolyJen uses install4j, the powerful multi-platform installer builder", "https://www.ej-technologies.com/products/install4j/overview.html"));
     loVectorLinks.add(new CreditAdapter("PolyJen uses the excellent charting library of JFreeChart.", "http://www.jfree.org/jfreechart/"));
     loVectorLinks.add(new CreditAdapter("PolyJen also uses the wonderful reporting library of JasperReports.", "http://community.jaspersoft.com/project/jasperreports-library"));
     loVectorLinks.add(new CreditAdapter("All other images, save for J'Envelope icon, came from the <em>Nuvola</em> icon theme for KDE 3.x by David Vignoni.", "http://commons.wikimedia.org/wiki/Nuvola"));
