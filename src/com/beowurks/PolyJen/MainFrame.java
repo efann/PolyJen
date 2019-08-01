@@ -788,7 +788,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     final Vector<ICredit> loVectorLinks = new Vector<>();
 
     loVectorLinks.add(new CreditAdapter("The theory behind PolyJen was developed by Dr. Edward Nieh.", "https://www.facebook.com/edward.nieh.78759"));
-    loVectorLinks.add(new CreditAdapter("For installations, PolyJen uses install4j, the powerful multi-platform installer builder", "https://www.ej-technologies.com/products/install4j/overview.html"));
+    loVectorLinks.add(new CreditAdapter("For installations, PolyJen uses install4j, the powerful multi-platform installer builder.", "https://www.ej-technologies.com/products/install4j/overview.html"));
     loVectorLinks.add(new CreditAdapter("PolyJen uses the excellent charting library of JFreeChart.", "http://www.jfree.org/jfreechart/"));
     loVectorLinks.add(new CreditAdapter("PolyJen also uses the wonderful reporting library of JasperReports.", "http://community.jaspersoft.com/project/jasperreports-library"));
     loVectorLinks.add(new CreditAdapter("All other images, save for J'Envelope icon, came from the <em>Nuvola</em> icon theme for KDE 3.x by David Vignoni.", "http://commons.wikimedia.org/wiki/Nuvola"));
