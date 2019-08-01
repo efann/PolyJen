@@ -40,6 +40,7 @@ import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
+import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.awt.image.BufferedImage;
@@ -454,6 +455,18 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     this.btnExport1.addActionListener(this);
 
     this.addWindowFocusListener(this);
+
+    this.addWindowListener(new WindowAdapter()
+    {
+      // By the way, WINDOW_CLOSING is never passed to super.processWindowEvent.
+      // So you have to override windowClosing.
+      @Override
+      public void windowClosing(final WindowEvent teWindowEvent)
+      {
+        MainFrame.this.performShutdownMaintenance();
+      }
+    });
+
   }
 
   // ---------------------------------------------------------------------------
@@ -647,7 +660,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
 
     if (loObject == this.menuFileExit1)
     {
-      this.performShutdownMaintenance();
+      this.closeWindow();
     }
     else if (loObject == this.menuPolymer1)
     {
@@ -795,22 +808,6 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     loVectorLinks.add(new CreditAdapter("Code examples from the book, Swing, 2nd Edition, by Matthew Robinson & Pavel Vorobiev, gave us great tutorials on Java Swing.", "http://www.manning.com/robinson2/"));
 
     new DialogCredits(this, loVectorLinks);
-  }
-
-  // ---------------------------------------------------------------------------
-  // Overridden so we can exit when window is closed
-  @Override
-  protected void processWindowEvent(final WindowEvent e)
-  {
-    super.processWindowEvent(e);
-
-    // By the way, WindowEvent.WINDOW_ACTIVATED is defined in PolyJenBaseFrame
-    switch (e.getID())
-    {
-      case WindowEvent.WINDOW_CLOSING:
-        this.performShutdownMaintenance();
-        break;
-    }
   }
 
   // ---------------------------------------------------------------------------
@@ -972,14 +969,14 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
   @Override
   public void PreferencesHandler()
   {
-
+    Util.infoMessage(this, "There aren't any preferences for this application.");
   }
 
   // ---------------------------------------------------------------------------
   @Override
   public void QuitHandler()
   {
-
+    this.closeWindow();
   }
 
   // ---------------------------------------------------------------------------
