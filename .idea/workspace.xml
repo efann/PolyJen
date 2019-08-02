@@ -7,8 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="395dfbfa-4022-438e-b22a-3b3634323a49" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/install/install.install4j" beforeDir="false" afterPath="$PROJECT_DIR$/install/install.install4j" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/MainFrame.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,6 +166,10 @@
       <workItem from="1564671190552" duration="2706000" />
       <workItem from="1564681004062" duration="27000" />
       <workItem from="1564681108320" duration="1705000" />
+      <workItem from="1564685557821" duration="533000" />
+      <workItem from="1564695297710" duration="37000" />
+      <workItem from="1564700019723" duration="272000" />
+      <workItem from="1564755803466" duration="2700000" />
     </task>
     <servers />
   </component>

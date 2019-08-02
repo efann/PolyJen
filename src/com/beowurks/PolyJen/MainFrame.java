@@ -804,7 +804,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     loVectorLinks.add(new CreditAdapter("For installations, PolyJen uses install4j, the powerful multi-platform installer builder.", "https://www.ej-technologies.com/products/install4j/overview.html"));
     loVectorLinks.add(new CreditAdapter("PolyJen uses the excellent charting library of JFreeChart.", "http://www.jfree.org/jfreechart/"));
     loVectorLinks.add(new CreditAdapter("PolyJen also uses the wonderful reporting library of JasperReports.", "http://community.jaspersoft.com/project/jasperreports-library"));
-    loVectorLinks.add(new CreditAdapter("All other images, save for J'Envelope icon, came from the <em>Nuvola</em> icon theme for KDE 3.x by David Vignoni.", "http://commons.wikimedia.org/wiki/Nuvola"));
+    loVectorLinks.add(new CreditAdapter("All other images, save for the PolyJen icon, came from the <em>Nuvola</em> icon theme for KDE 3.x by David Vignoni.", "http://commons.wikimedia.org/wiki/Nuvola"));
     loVectorLinks.add(new CreditAdapter("Code examples from the book, Swing, 2nd Edition, by Matthew Robinson & Pavel Vorobiev, gave us great tutorials on Java Swing.", "http://www.manning.com/robinson2/"));
 
     new DialogCredits(this, loVectorLinks);
