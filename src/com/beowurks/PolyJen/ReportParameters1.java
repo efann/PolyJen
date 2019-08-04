@@ -11,11 +11,9 @@ package com.beowurks.PolyJen;
 
 import com.beowurks.BeoCommon.SchemaWriter;
 import com.beowurks.BeoCommon.XMLTextWriter;
-
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
-
 import org.w3c.dom.Node;
 
 // Refer to the following link for some extremely helpful information:

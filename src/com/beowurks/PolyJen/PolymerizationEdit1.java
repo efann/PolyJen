@@ -18,6 +18,11 @@ import com.beowurks.BeoCommon.FormattedIntegerField;
 import com.beowurks.BeoCommon.GridBagLayoutHelper;
 import com.beowurks.BeoCommon.Util;
 
+import javax.swing.*;
+import javax.swing.border.EtchedBorder;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import javax.swing.table.AbstractTableModel;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.Point;
@@ -29,27 +34,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.text.ParseException;
 import java.util.Vector;
-
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.DefaultCellEditor;
-import javax.swing.ImageIcon;
-import javax.swing.JComponent;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JMenuItem;
-import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
-import javax.swing.JScrollPane;
-import javax.swing.JSpinner;
-import javax.swing.JTable;
-import javax.swing.JTextArea;
-import javax.swing.SpinnerNumberModel;
-import javax.swing.SwingConstants;
-import javax.swing.border.EtchedBorder;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-import javax.swing.table.AbstractTableModel;
 
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------

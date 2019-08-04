@@ -9,16 +9,17 @@
 
 package com.beowurks.PolyJen;
 
-import com.beowurks.PolyJen.Global.DistributionStructure;
 import com.beowurks.BeoCommon.GridBagLayoutHelper;
 import com.beowurks.BeoCommon.Util;
-
+import com.beowurks.PolyJen.Global.DistributionStructure;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
 
+import javax.swing.*;
+import javax.swing.border.EtchedBorder;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
@@ -30,18 +31,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Date;
 import java.util.Random;
-
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.ButtonGroup;
-import javax.swing.JCheckBox;
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JRadioButton;
-import javax.swing.ProgressMonitor;
-import javax.swing.UIManager;
-import javax.swing.border.EtchedBorder;
 
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------
@@ -219,9 +208,9 @@ public class Calculations1 extends PolyJenBaseInternalFrame implements ActionLis
   private void setupCharts()
   {
     this.chtDistribution1 = ChartFactory.createBarChart3D("Distribution", "# of Oligomers", // domain
-            "Mole %", // range
-            null, PlotOrientation.VERTICAL, false, true, // tooltips
-            false // urls
+        "Mole %", // range
+        null, PlotOrientation.VERTICAL, false, true, // tooltips
+        false // urls
     );
 
     this.chtDistribution1.setBackgroundPaint(new GradientPaint(0, 0, UIManager.getColor("Button.background"), 0, 1000, Color.darkGray, false));

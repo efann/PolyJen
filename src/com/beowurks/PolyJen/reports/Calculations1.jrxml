@@ -8,296 +8,309 @@
   ~
   -->
 
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Evaluation1" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5cc86df2-c3fb-48ea-94f7-8f6eaacea59b">
-	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
-	<queryString language="xPath">
-		<![CDATA[/CalculationsData/Records]]>
-	</queryString>
-	<field name="NoOfOligomers" class="java.lang.String">
-		<fieldDescription><![CDATA[NoOfOligomers]]></fieldDescription>
-	</field>
-	<field name="Site1" class="java.lang.String">
-		<fieldDescription><![CDATA[Site1]]></fieldDescription>
-	</field>
-	<field name="Site2" class="java.lang.String">
-		<fieldDescription><![CDATA[Site2]]></fieldDescription>
-	</field>
-	<field name="Site3" class="java.lang.String">
-		<fieldDescription><![CDATA[Site3]]></fieldDescription>
-	</field>
-	<field name="Site4" class="java.lang.String">
-		<fieldDescription><![CDATA[Site4]]></fieldDescription>
-	</field>
-	<field name="Site5" class="java.lang.String">
-		<fieldDescription><![CDATA[Site5]]></fieldDescription>
-	</field>
-	<field name="Site6" class="java.lang.String">
-		<fieldDescription><![CDATA[Site6]]></fieldDescription>
-	</field>
-	<field name="Site7" class="java.lang.String">
-		<fieldDescription><![CDATA[Site7]]></fieldDescription>
-	</field>
-	<field name="Site8" class="java.lang.String">
-		<fieldDescription><![CDATA[Site8]]></fieldDescription>
-	</field>
-	<field name="Site9" class="java.lang.String">
-		<fieldDescription><![CDATA[Site9]]></fieldDescription>
-	</field>
-	<field name="Molecule" class="java.lang.String">
-		<fieldDescription><![CDATA[Molecule]]></fieldDescription>
-	</field>
-	<field name="Title" class="java.lang.String">
-		<fieldDescription><![CDATA[Title]]></fieldDescription>
-	</field>
-	<variable name="varCurrentDate" class="java.util.Calendar">
-		<variableExpression><![CDATA[($V{varCurrentDate} != null) ? $V{varCurrentDate} : java.util.Calendar.getInstance()]]></variableExpression>
-		<initialValueExpression><![CDATA[]]></initialValueExpression>
-	</variable>
-	<title>
-		<band height="47" splitType="Stretch">
-			<staticText>
-				<reportElement uuid="cc49b26b-ee9f-40dd-ad36-97c8740dfa3c" x="191" y="0" width="172" height="20" forecolor="#0000FF"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="14" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Calculation Report]]></text>
-			</staticText>
-			<textField>
-				<reportElement uuid="2e179e03-8363-438e-a5b1-68f7b058daf2" x="20" y="23" width="514" height="20"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Title}]]></textFieldExpression>
-			</textField>
-		</band>
-	</title>
-	<columnHeader>
-		<band height="37" splitType="Stretch">
-			<staticText>
-				<reportElement uuid="6db2720d-57e4-4a97-83b9-696753f48b5b" x="19" y="7" width="48" height="25"/>
-				<textElement textAlignment="Right" verticalAlignment="Bottom">
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[# of
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="Evaluation1" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555"
+              leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20"
+              uuid="5cc86df2-c3fb-48ea-94f7-8f6eaacea59b">
+  <property name="ireport.zoom" value="1.0"/>
+  <property name="ireport.x" value="0"/>
+  <property name="ireport.y" value="0"/>
+  <queryString language="xPath">
+    <![CDATA[/CalculationsData/Records]]>
+  </queryString>
+  <field name="NoOfOligomers" class="java.lang.String">
+    <fieldDescription><![CDATA[NoOfOligomers]]></fieldDescription>
+  </field>
+  <field name="Site1" class="java.lang.String">
+    <fieldDescription><![CDATA[Site1]]></fieldDescription>
+  </field>
+  <field name="Site2" class="java.lang.String">
+    <fieldDescription><![CDATA[Site2]]></fieldDescription>
+  </field>
+  <field name="Site3" class="java.lang.String">
+    <fieldDescription><![CDATA[Site3]]></fieldDescription>
+  </field>
+  <field name="Site4" class="java.lang.String">
+    <fieldDescription><![CDATA[Site4]]></fieldDescription>
+  </field>
+  <field name="Site5" class="java.lang.String">
+    <fieldDescription><![CDATA[Site5]]></fieldDescription>
+  </field>
+  <field name="Site6" class="java.lang.String">
+    <fieldDescription><![CDATA[Site6]]></fieldDescription>
+  </field>
+  <field name="Site7" class="java.lang.String">
+    <fieldDescription><![CDATA[Site7]]></fieldDescription>
+  </field>
+  <field name="Site8" class="java.lang.String">
+    <fieldDescription><![CDATA[Site8]]></fieldDescription>
+  </field>
+  <field name="Site9" class="java.lang.String">
+    <fieldDescription><![CDATA[Site9]]></fieldDescription>
+  </field>
+  <field name="Molecule" class="java.lang.String">
+    <fieldDescription><![CDATA[Molecule]]></fieldDescription>
+  </field>
+  <field name="Title" class="java.lang.String">
+    <fieldDescription><![CDATA[Title]]></fieldDescription>
+  </field>
+  <variable name="varCurrentDate" class="java.util.Calendar">
+    <variableExpression>
+      <![CDATA[($V{varCurrentDate} != null) ? $V{varCurrentDate} : java.util.Calendar.getInstance()]]></variableExpression>
+    <initialValueExpression><![CDATA[]]></initialValueExpression>
+  </variable>
+  <title>
+    <band height="47" splitType="Stretch">
+      <staticText>
+        <reportElement uuid="cc49b26b-ee9f-40dd-ad36-97c8740dfa3c" x="191" y="0" width="172" height="20"
+                       forecolor="#0000FF"/>
+        <textElement textAlignment="Center" verticalAlignment="Middle">
+          <font fontName="Arial" size="14" isBold="true"/>
+        </textElement>
+        <text><![CDATA[Calculation Report]]></text>
+      </staticText>
+      <textField>
+        <reportElement uuid="2e179e03-8363-438e-a5b1-68f7b058daf2" x="20" y="23" width="514" height="20"/>
+        <textElement textAlignment="Center" verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{Title}]]></textFieldExpression>
+      </textField>
+    </band>
+  </title>
+  <columnHeader>
+    <band height="37" splitType="Stretch">
+      <staticText>
+        <reportElement uuid="6db2720d-57e4-4a97-83b9-696753f48b5b" x="19" y="7" width="48" height="25"/>
+        <textElement textAlignment="Right" verticalAlignment="Bottom">
+          <font fontName="Arial"/>
+        </textElement>
+        <text><![CDATA[# of
 Oligomers]]></text>
-			</staticText>
-			<staticText>
-				<reportElement uuid="1c648b7f-43e4-419e-912d-03db7aae31a4" x="73" y="12" width="40" height="20"/>
-				<textElement textAlignment="Right" verticalAlignment="Bottom">
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[Site #1]]></text>
-			</staticText>
-			<staticText>
-				<reportElement uuid="6d446bcb-d846-49f7-b89e-23fa50391fd2" x="119" y="12" width="40" height="20"/>
-				<textElement textAlignment="Right" verticalAlignment="Bottom">
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[Site #2]]></text>
-			</staticText>
-			<staticText>
-				<reportElement uuid="f3d5cf17-8c88-4906-a03a-e37bd311296f" x="165" y="12" width="40" height="20"/>
-				<textElement textAlignment="Right" verticalAlignment="Bottom">
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[Site #3]]></text>
-			</staticText>
-			<staticText>
-				<reportElement uuid="68043fea-9f45-47b3-aaa7-f12a34edbe8c" x="211" y="12" width="40" height="20"/>
-				<textElement textAlignment="Right" verticalAlignment="Bottom">
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[Site #4]]></text>
-			</staticText>
-			<staticText>
-				<reportElement uuid="829c9f54-dc6d-4d37-ad67-dd5864380fd6" x="257" y="12" width="40" height="20"/>
-				<textElement textAlignment="Right" verticalAlignment="Bottom">
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[Site #5]]></text>
-			</staticText>
-			<staticText>
-				<reportElement uuid="e92e6f3a-6479-4777-b218-527e025d127b" x="303" y="12" width="40" height="20"/>
-				<textElement textAlignment="Right" verticalAlignment="Bottom">
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[Site #6]]></text>
-			</staticText>
-			<staticText>
-				<reportElement uuid="4fdcd246-59b4-494d-83db-ecb3a5ec951b" x="349" y="12" width="40" height="20"/>
-				<textElement textAlignment="Right" verticalAlignment="Bottom">
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[Site #7]]></text>
-			</staticText>
-			<staticText>
-				<reportElement uuid="7e27e725-cba5-464a-b9f4-78e1751df2df" x="395" y="12" width="40" height="20"/>
-				<textElement textAlignment="Right" verticalAlignment="Bottom">
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[Site #8]]></text>
-			</staticText>
-			<staticText>
-				<reportElement uuid="5bf362be-ad85-4648-bed3-94bd367e8b5c" x="441" y="12" width="40" height="20"/>
-				<textElement textAlignment="Right" verticalAlignment="Bottom">
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[Site #9]]></text>
-			</staticText>
-			<staticText>
-				<reportElement uuid="0e5f3b51-4bfd-4a3c-9490-63c1351ac232" x="488" y="12" width="48" height="20"/>
-				<textElement textAlignment="Right" verticalAlignment="Bottom">
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[Molecule]]></text>
-			</staticText>
-			<line>
-				<reportElement uuid="9214865e-5fe9-4e53-9eaa-322193b3bda8" x="17" y="32" width="520" height="1"/>
-			</line>
-		</band>
-	</columnHeader>
-	<detail>
-		<band height="21" splitType="Stretch">
-			<textField>
-				<reportElement uuid="5c7704f2-0992-42dc-901d-78a7e1a8eb63" x="38" y="0" width="29" height="20">
-					<printWhenExpression><![CDATA[Boolean.valueOf($F{NoOfOligomers} != null)]]></printWhenExpression>
-				</reportElement>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{NoOfOligomers}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement uuid="e366424d-fc5d-423b-9534-17fbf780f566" x="73" y="0" width="40" height="20">
-					<printWhenExpression><![CDATA[Boolean.valueOf($F{Site1} != null)]]></printWhenExpression>
-				</reportElement>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Site1}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement uuid="5cee3549-8b86-4486-b381-4ee35518aaec" x="165" y="0" width="40" height="20">
-					<printWhenExpression><![CDATA[Boolean.valueOf($F{Site3} != null)]]></printWhenExpression>
-				</reportElement>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Site3}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement uuid="c1fa7116-9c61-4d59-a07c-8846198960b2" x="119" y="0" width="40" height="20">
-					<printWhenExpression><![CDATA[Boolean.valueOf($F{Site2} != null)]]></printWhenExpression>
-				</reportElement>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Site2}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement uuid="addbe7a2-e14a-4dad-8c6c-27efeacd41ef" x="211" y="0" width="40" height="20">
-					<printWhenExpression><![CDATA[Boolean.valueOf($F{Site4} != null)]]></printWhenExpression>
-				</reportElement>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Site4}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement uuid="0299e57a-4a90-4968-a3ca-1f525c9368fe" x="257" y="0" width="40" height="20">
-					<printWhenExpression><![CDATA[Boolean.valueOf($F{Site5} != null)]]></printWhenExpression>
-				</reportElement>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Site5}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement uuid="6ec56706-5798-402d-844f-0ea0f3703c04" x="303" y="0" width="40" height="20">
-					<printWhenExpression><![CDATA[Boolean.valueOf($F{Site6} != null)]]></printWhenExpression>
-				</reportElement>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Site6}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement uuid="f9264197-b7e5-4ae5-8d87-c647bd98b52d" x="349" y="0" width="40" height="20">
-					<printWhenExpression><![CDATA[Boolean.valueOf($F{Site7} != null)]]></printWhenExpression>
-				</reportElement>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Site7}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement uuid="9ae0bc3a-bc82-4e15-a896-11fd30ae267b" x="395" y="0" width="40" height="20">
-					<printWhenExpression><![CDATA[Boolean.valueOf($F{Site8} != null)]]></printWhenExpression>
-				</reportElement>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Site8}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement uuid="d632c4d6-8040-4eb4-b0e5-af17aa691ee1" x="441" y="0" width="40" height="20">
-					<printWhenExpression><![CDATA[Boolean.valueOf($F{Site9} != null)]]></printWhenExpression>
-				</reportElement>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Site9}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement uuid="ebf7bfa6-3ffc-4079-b8f7-a274739d3fca" x="496" y="0" width="40" height="20">
-					<printWhenExpression><![CDATA[Boolean.valueOf($F{Molecule} != null)]]></printWhenExpression>
-				</reportElement>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Molecule}]]></textFieldExpression>
-			</textField>
-		</band>
-	</detail>
-	<pageFooter>
-		<band height="53" splitType="Stretch">
-			<staticText>
-				<reportElement uuid="319b4853-a14b-4773-827a-7ddc3ac07553" x="243" y="0" width="68" height="10" forecolor="#0000FF"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="8" isBold="true"/>
-				</textElement>
-				<text><![CDATA[PolyJen]]></text>
-			</staticText>
-			<staticText>
-				<reportElement uuid="36413ce9-8427-452b-bbe1-872cef2a7cf3" x="176" y="10" width="203" height="10" forecolor="#0000FF"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="8" isItalic="true"/>
-				</textElement>
-				<text><![CDATA[Polymerization in a Digital Laboratory]]></text>
-			</staticText>
-			<textField>
-				<reportElement uuid="92503b2e-e389-4993-97d5-e25583fbbeac" x="86" y="20" width="383" height="10" forecolor="#0000FF"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA["Copyright© 2003-" + Integer.toString($V{varCurrentDate}.get(Calendar.YEAR)) + " Beowurks. All rights reserved."]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement uuid="1a1cbd3e-9170-4e8c-bc26-e31081e3b8fa" x="190" y="37" width="100" height="16" forecolor="#0000FF"/>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Arial" size="8" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}.toString() + " out of "]]></textFieldExpression>
-			</textField>
-			<textField evaluationTime="Report">
-				<reportElement uuid="04ab63c7-a700-483e-8329-c16a88b0f6ef" x="290" y="37" width="100" height="16" forecolor="#0000FF"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" size="8" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
-			</textField>
-		</band>
-	</pageFooter>
+      </staticText>
+      <staticText>
+        <reportElement uuid="1c648b7f-43e4-419e-912d-03db7aae31a4" x="73" y="12" width="40" height="20"/>
+        <textElement textAlignment="Right" verticalAlignment="Bottom">
+          <font fontName="Arial"/>
+        </textElement>
+        <text><![CDATA[Site #1]]></text>
+      </staticText>
+      <staticText>
+        <reportElement uuid="6d446bcb-d846-49f7-b89e-23fa50391fd2" x="119" y="12" width="40" height="20"/>
+        <textElement textAlignment="Right" verticalAlignment="Bottom">
+          <font fontName="Arial"/>
+        </textElement>
+        <text><![CDATA[Site #2]]></text>
+      </staticText>
+      <staticText>
+        <reportElement uuid="f3d5cf17-8c88-4906-a03a-e37bd311296f" x="165" y="12" width="40" height="20"/>
+        <textElement textAlignment="Right" verticalAlignment="Bottom">
+          <font fontName="Arial"/>
+        </textElement>
+        <text><![CDATA[Site #3]]></text>
+      </staticText>
+      <staticText>
+        <reportElement uuid="68043fea-9f45-47b3-aaa7-f12a34edbe8c" x="211" y="12" width="40" height="20"/>
+        <textElement textAlignment="Right" verticalAlignment="Bottom">
+          <font fontName="Arial"/>
+        </textElement>
+        <text><![CDATA[Site #4]]></text>
+      </staticText>
+      <staticText>
+        <reportElement uuid="829c9f54-dc6d-4d37-ad67-dd5864380fd6" x="257" y="12" width="40" height="20"/>
+        <textElement textAlignment="Right" verticalAlignment="Bottom">
+          <font fontName="Arial"/>
+        </textElement>
+        <text><![CDATA[Site #5]]></text>
+      </staticText>
+      <staticText>
+        <reportElement uuid="e92e6f3a-6479-4777-b218-527e025d127b" x="303" y="12" width="40" height="20"/>
+        <textElement textAlignment="Right" verticalAlignment="Bottom">
+          <font fontName="Arial"/>
+        </textElement>
+        <text><![CDATA[Site #6]]></text>
+      </staticText>
+      <staticText>
+        <reportElement uuid="4fdcd246-59b4-494d-83db-ecb3a5ec951b" x="349" y="12" width="40" height="20"/>
+        <textElement textAlignment="Right" verticalAlignment="Bottom">
+          <font fontName="Arial"/>
+        </textElement>
+        <text><![CDATA[Site #7]]></text>
+      </staticText>
+      <staticText>
+        <reportElement uuid="7e27e725-cba5-464a-b9f4-78e1751df2df" x="395" y="12" width="40" height="20"/>
+        <textElement textAlignment="Right" verticalAlignment="Bottom">
+          <font fontName="Arial"/>
+        </textElement>
+        <text><![CDATA[Site #8]]></text>
+      </staticText>
+      <staticText>
+        <reportElement uuid="5bf362be-ad85-4648-bed3-94bd367e8b5c" x="441" y="12" width="40" height="20"/>
+        <textElement textAlignment="Right" verticalAlignment="Bottom">
+          <font fontName="Arial"/>
+        </textElement>
+        <text><![CDATA[Site #9]]></text>
+      </staticText>
+      <staticText>
+        <reportElement uuid="0e5f3b51-4bfd-4a3c-9490-63c1351ac232" x="488" y="12" width="48" height="20"/>
+        <textElement textAlignment="Right" verticalAlignment="Bottom">
+          <font fontName="Arial"/>
+        </textElement>
+        <text><![CDATA[Molecule]]></text>
+      </staticText>
+      <line>
+        <reportElement uuid="9214865e-5fe9-4e53-9eaa-322193b3bda8" x="17" y="32" width="520" height="1"/>
+      </line>
+    </band>
+  </columnHeader>
+  <detail>
+    <band height="21" splitType="Stretch">
+      <textField>
+        <reportElement uuid="5c7704f2-0992-42dc-901d-78a7e1a8eb63" x="38" y="0" width="29" height="20">
+          <printWhenExpression><![CDATA[Boolean.valueOf($F{NoOfOligomers} != null)]]></printWhenExpression>
+        </reportElement>
+        <textElement textAlignment="Right" verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{NoOfOligomers}]]></textFieldExpression>
+      </textField>
+      <textField>
+        <reportElement uuid="e366424d-fc5d-423b-9534-17fbf780f566" x="73" y="0" width="40" height="20">
+          <printWhenExpression><![CDATA[Boolean.valueOf($F{Site1} != null)]]></printWhenExpression>
+        </reportElement>
+        <textElement textAlignment="Right" verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{Site1}]]></textFieldExpression>
+      </textField>
+      <textField>
+        <reportElement uuid="5cee3549-8b86-4486-b381-4ee35518aaec" x="165" y="0" width="40" height="20">
+          <printWhenExpression><![CDATA[Boolean.valueOf($F{Site3} != null)]]></printWhenExpression>
+        </reportElement>
+        <textElement textAlignment="Right" verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{Site3}]]></textFieldExpression>
+      </textField>
+      <textField>
+        <reportElement uuid="c1fa7116-9c61-4d59-a07c-8846198960b2" x="119" y="0" width="40" height="20">
+          <printWhenExpression><![CDATA[Boolean.valueOf($F{Site2} != null)]]></printWhenExpression>
+        </reportElement>
+        <textElement textAlignment="Right" verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{Site2}]]></textFieldExpression>
+      </textField>
+      <textField>
+        <reportElement uuid="addbe7a2-e14a-4dad-8c6c-27efeacd41ef" x="211" y="0" width="40" height="20">
+          <printWhenExpression><![CDATA[Boolean.valueOf($F{Site4} != null)]]></printWhenExpression>
+        </reportElement>
+        <textElement textAlignment="Right" verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{Site4}]]></textFieldExpression>
+      </textField>
+      <textField>
+        <reportElement uuid="0299e57a-4a90-4968-a3ca-1f525c9368fe" x="257" y="0" width="40" height="20">
+          <printWhenExpression><![CDATA[Boolean.valueOf($F{Site5} != null)]]></printWhenExpression>
+        </reportElement>
+        <textElement textAlignment="Right" verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{Site5}]]></textFieldExpression>
+      </textField>
+      <textField>
+        <reportElement uuid="6ec56706-5798-402d-844f-0ea0f3703c04" x="303" y="0" width="40" height="20">
+          <printWhenExpression><![CDATA[Boolean.valueOf($F{Site6} != null)]]></printWhenExpression>
+        </reportElement>
+        <textElement textAlignment="Right" verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{Site6}]]></textFieldExpression>
+      </textField>
+      <textField>
+        <reportElement uuid="f9264197-b7e5-4ae5-8d87-c647bd98b52d" x="349" y="0" width="40" height="20">
+          <printWhenExpression><![CDATA[Boolean.valueOf($F{Site7} != null)]]></printWhenExpression>
+        </reportElement>
+        <textElement textAlignment="Right" verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{Site7}]]></textFieldExpression>
+      </textField>
+      <textField>
+        <reportElement uuid="9ae0bc3a-bc82-4e15-a896-11fd30ae267b" x="395" y="0" width="40" height="20">
+          <printWhenExpression><![CDATA[Boolean.valueOf($F{Site8} != null)]]></printWhenExpression>
+        </reportElement>
+        <textElement textAlignment="Right" verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{Site8}]]></textFieldExpression>
+      </textField>
+      <textField>
+        <reportElement uuid="d632c4d6-8040-4eb4-b0e5-af17aa691ee1" x="441" y="0" width="40" height="20">
+          <printWhenExpression><![CDATA[Boolean.valueOf($F{Site9} != null)]]></printWhenExpression>
+        </reportElement>
+        <textElement textAlignment="Right" verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{Site9}]]></textFieldExpression>
+      </textField>
+      <textField>
+        <reportElement uuid="ebf7bfa6-3ffc-4079-b8f7-a274739d3fca" x="496" y="0" width="40" height="20">
+          <printWhenExpression><![CDATA[Boolean.valueOf($F{Molecule} != null)]]></printWhenExpression>
+        </reportElement>
+        <textElement textAlignment="Right" verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{Molecule}]]></textFieldExpression>
+      </textField>
+    </band>
+  </detail>
+  <pageFooter>
+    <band height="53" splitType="Stretch">
+      <staticText>
+        <reportElement uuid="319b4853-a14b-4773-827a-7ddc3ac07553" x="243" y="0" width="68" height="10"
+                       forecolor="#0000FF"/>
+        <textElement textAlignment="Center" verticalAlignment="Middle">
+          <font fontName="Arial" size="8" isBold="true"/>
+        </textElement>
+        <text><![CDATA[PolyJen]]></text>
+      </staticText>
+      <staticText>
+        <reportElement uuid="36413ce9-8427-452b-bbe1-872cef2a7cf3" x="176" y="10" width="203" height="10"
+                       forecolor="#0000FF"/>
+        <textElement textAlignment="Center" verticalAlignment="Middle">
+          <font fontName="Arial" size="8" isItalic="true"/>
+        </textElement>
+        <text><![CDATA[Polymerization in a Digital Laboratory]]></text>
+      </staticText>
+      <textField>
+        <reportElement uuid="92503b2e-e389-4993-97d5-e25583fbbeac" x="86" y="20" width="383" height="10"
+                       forecolor="#0000FF"/>
+        <textElement textAlignment="Center" verticalAlignment="Middle">
+          <font fontName="Arial" size="8"/>
+        </textElement>
+        <textFieldExpression>
+          <![CDATA["Copyright© 2003-" + Integer.toString($V{varCurrentDate}.get(Calendar.YEAR)) + " Beowurks. All rights reserved."]]></textFieldExpression>
+      </textField>
+      <textField>
+        <reportElement uuid="1a1cbd3e-9170-4e8c-bc26-e31081e3b8fa" x="190" y="37" width="100" height="16"
+                       forecolor="#0000FF"/>
+        <textElement textAlignment="Right" verticalAlignment="Middle">
+          <font fontName="Arial" size="8" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$V{PAGE_NUMBER}.toString() + " out of "]]></textFieldExpression>
+      </textField>
+      <textField evaluationTime="Report">
+        <reportElement uuid="04ab63c7-a700-483e-8329-c16a88b0f6ef" x="290" y="37" width="100" height="16"
+                       forecolor="#0000FF"/>
+        <textElement verticalAlignment="Middle">
+          <font fontName="Arial" size="8" isBold="true"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+      </textField>
+    </band>
+  </pageFooter>
 </jasperReport>

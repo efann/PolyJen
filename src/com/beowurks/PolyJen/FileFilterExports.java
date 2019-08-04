@@ -16,14 +16,10 @@ import com.beowurks.BeoExport.ExportCommaQuoteDelimiter;
 import com.beowurks.BeoExport.ExportExcel21;
 import com.beowurks.BeoExport.ExportHTML;
 import com.beowurks.BeoExport.ExportTabDelimiter;
-
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
-import java.io.FileWriter;
-import java.io.IOException;
 
 import javax.swing.filechooser.FileFilter;
 import javax.xml.transform.OutputKeys;
@@ -34,6 +30,8 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import java.io.FileWriter;
+import java.io.IOException;
 
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------

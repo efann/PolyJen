@@ -12,19 +12,11 @@ package com.beowurks.PolyJen;
 import com.beowurks.BeoCommon.FormattedIntegerField;
 import com.beowurks.BeoCommon.GridBagLayoutHelper;
 import com.beowurks.BeoCommon.Util;
-
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.plot.XYPlot;
 import org.jfree.chart.renderer.xy.XYDotRenderer;
-
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.GradientPaint;
-import java.awt.GridBagConstraints;
-import java.util.Date;
-import java.util.Random;
 
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -34,6 +26,12 @@ import javax.swing.ProgressMonitor;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.border.EtchedBorder;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.GradientPaint;
+import java.awt.GridBagConstraints;
+import java.util.Date;
+import java.util.Random;
 
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------
@@ -154,7 +152,7 @@ public class Evaluate1 extends PolyJenBaseInternalFrame implements Runnable
     this.foSpreadXYData = new EvaluateSpreadDataset(this);
 
     final JFreeChart loChart = ChartFactory.createXYLineChart("Evaluate Spread", "Initiator Molecule", "Monomers Reacted", this.foSpreadXYData, PlotOrientation.VERTICAL, false, true, // tooltips
-            false // urls
+        false // urls
     );
 
     final XYPlot loPlot = loChart.getXYPlot();
@@ -171,7 +169,7 @@ public class Evaluate1 extends PolyJenBaseInternalFrame implements Runnable
     this.foDistributionXYData = new EvaluateDistributionDataset(this);
 
     final JFreeChart loChart = ChartFactory.createXYLineChart("Evaluate Distribution", "# of Monomers in Polymer", "# of Initiator Molecules", this.foDistributionXYData, PlotOrientation.VERTICAL, false, true, // tooltips
-            false // urls
+        false // urls
     );
 
     loChart.setBackgroundPaint(new GradientPaint(0, 0, UIManager.getColor("Button.background"), 0, 1000, Color.darkGray, false));

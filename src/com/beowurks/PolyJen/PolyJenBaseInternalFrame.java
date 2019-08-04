@@ -11,12 +11,11 @@ package com.beowurks.PolyJen;
 
 import com.beowurks.BeoCommon.BaseInternalFrame;
 
+import javax.swing.ImageIcon;
+import javax.swing.event.InternalFrameEvent;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.net.URL;
-
-import javax.swing.ImageIcon;
-import javax.swing.event.InternalFrameEvent;
 
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------

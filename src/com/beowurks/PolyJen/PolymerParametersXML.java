@@ -13,12 +13,15 @@ import com.beowurks.BeoCommon.BaseXMLData;
 import com.beowurks.BeoCommon.Util;
 import com.beowurks.BeoCommon.XMLTextReader;
 import com.beowurks.BeoCommon.XMLTextWriter;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTextPane;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -26,11 +29,6 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.util.Date;
-
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-import javax.swing.JTextPane;
 
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------

@@ -14,6 +14,11 @@ import com.beowurks.BeoCommon.GridBagLayoutHelper;
 import com.beowurks.BeoCommon.Util;
 import com.beowurks.BeoTable.SortingTable;
 
+import javax.swing.Box;
+import javax.swing.ImageIcon;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.ListSelectionModel;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.Toolkit;
@@ -21,12 +26,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-
-import javax.swing.Box;
-import javax.swing.ImageIcon;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.ListSelectionModel;
 
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------

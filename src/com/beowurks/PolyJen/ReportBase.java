@@ -11,7 +11,6 @@ package com.beowurks.PolyJen;
 
 import com.beowurks.BeoCommon.GridBagLayoutHelper;
 import com.beowurks.BeoCommon.Util;
-
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -20,18 +19,16 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.query.JRXPathQueryExecuterFactory;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.engine.util.JRXmlUtils;
-
 import org.w3c.dom.Document;
 
+import javax.swing.JFileChooser;
+import javax.swing.JPanel;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridLayout;
 import java.awt.Toolkit;
 import java.io.File;
 import java.util.HashMap;
-
-import javax.swing.JFileChooser;
-import javax.swing.JPanel;
 
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------

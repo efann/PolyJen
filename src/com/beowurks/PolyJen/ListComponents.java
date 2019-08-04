@@ -13,6 +13,11 @@ import com.beowurks.BeoCommon.Util;
 import com.beowurks.BeoTable.SortingTable;
 import com.beowurks.BeoTable.SortingTableModel;
 
+import javax.swing.JComboBox;
+import javax.swing.JComponent;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import javax.swing.table.TableColumnModel;
 import java.awt.Container;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
@@ -20,16 +25,9 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.Serializable;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.Vector;
-
-import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
-import javax.swing.table.TableColumnModel;
 
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------
