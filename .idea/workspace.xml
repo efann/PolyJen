@@ -8,6 +8,24 @@
   <component name="ChangeListManager">
     <list default="true" id="395dfbfa-4022-438e-b22a-3b3634323a49" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ant/ManifestSetupUpdate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ant/ManifestSetupUpdate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/install.install4j" beforeDir="false" afterPath="$PROJECT_DIR$/install/install.install4j" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/license/EclipsePublicLicense-Version2.0.html" beforeDir="false" afterPath="$PROJECT_DIR$/license/EclipsePublicLicense-Version2.0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Calculations1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Calculations1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ChartButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ChartButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Evaluate1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Evaluate1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/FileFilterExports.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/FileFilterExports.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ListComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ListComponents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolyJenBaseInternalFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolyJenBaseInternalFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolymerParametersXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolymerParametersXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Polymerization1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Polymerization1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolymerizationEdit1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolymerizationEdit1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportEvaluation1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportEvaluation1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportParameters1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportParameters1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Calculations1.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Calculations1.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Evaluation1.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Evaluation1.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Parameters1.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Parameters1.jrxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,6 +187,7 @@
       <workItem from="1564755803466" duration="2700000" />
       <workItem from="1564787665034" duration="610000" />
       <workItem from="1564788344018" duration="8000" />
+      <workItem from="1564929782088" duration="131000" />
     </task>
     <servers />
   </component>
