@@ -7,7 +7,7 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
 import com.beowurks.BeoCommon.BaseXMLData;
 import com.beowurks.BeoCommon.Util;
@@ -49,8 +49,8 @@ public class PolymerParametersXML extends BaseXMLData
   private double fnMWOfInitiator = 0.0;
   private double fnMWOfMonomer = 0.0;
 
-  private final int faMonomerLevelReacted[] = new int[Global.MAX_POLYMER_LEVELS];
-  private final GridData faGridData[][];
+  private final int[] faMonomerLevelReacted = new int[Global.MAX_POLYMER_LEVELS];
+  private final GridData[][] faGridData;
 
   // ---------------------------------------------------------------------------
   public PolymerParametersXML(final String tcDirectory, final String tcFileName, final boolean tlParse)
@@ -511,7 +511,7 @@ public class PolymerParametersXML extends BaseXMLData
     {
       final Element loElement = (Element) loNodeList.item(i);
       final int lnRow = loXMLTextReader.getAttributeInteger(loElement, Global.FIELD_ARRAY_ROW, -1);
-      lnRowMax = (lnRow > lnRowMax) ? lnRow : lnRowMax;
+      lnRowMax = Math.max(lnRow, lnRowMax);
     }
 
     // It's zero-based so increment.

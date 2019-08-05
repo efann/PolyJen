@@ -7,37 +7,25 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
-import net.sf.jasperreports.engine.JRException;
-import net.sf.jasperreports.engine.JasperPrint;
-import net.sf.jasperreports.view.JRViewer;
+import com.beowurks.BeoCommon.BaseDialog;
 
-//---------------------------------------------------------------------------
-//---------------------------------------------------------------------------
-//---------------------------------------------------------------------------
-public class JRViewerBase extends JRViewer
+import javax.swing.JFrame;
+
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+public class PolyJenBaseDialog extends BaseDialog
 {
   // Gets rid of the following error:
   // serializable class has no definition of serialVersionUID
   private static final long serialVersionUID = 1L;
 
   // ---------------------------------------------------------------------------
-  public JRViewerBase(final JasperPrint toJasperPrint) throws JRException
+  public PolyJenBaseDialog(final JFrame toFrame, final String tcTitle)
   {
-    super(toJasperPrint);
-
-    this.tlbToolBar.remove(this.btnPrint);
-    this.tlbToolBar.remove(this.btnReload);
-  }
-
-  // ---------------------------------------------------------------------------
-  @Override
-  public void loadReport(final JasperPrint toJasperPrint)
-  {
-    super.loadReport(toJasperPrint);
-
-    this.refreshPage();
+    super(toFrame, tcTitle);
   }
   // ---------------------------------------------------------------------------
 }

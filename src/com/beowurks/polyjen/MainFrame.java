@@ -7,7 +7,7 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
 import com.beowurks.BeoCommon.BaseButton;
 import com.beowurks.BeoCommon.BaseFrame;
@@ -184,10 +184,10 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
       throw new Exception("The menus have not yet been set for the routine setupButtons in PolyJen.");
     }
 
-    this.setupToolBarButtons(this.btnRun1, "/com/beowurks/PolyJen/images/run32.png", this.menuRun1);
-    this.setupToolBarButtons(this.btnReports1, "/com/beowurks/PolyJen/images/report32.png", this.menuReports1);
-    this.setupToolBarButtons(this.btnPrint1, "/com/beowurks/PolyJen/images/printer32.png", this.menuPrint1);
-    this.setupToolBarButtons(this.btnExport1, "/com/beowurks/PolyJen/images/export32.png", this.menuExport1);
+    this.setupToolBarButtons(this.btnRun1, "/com/beowurks/polyjen/images/run32.png", this.menuRun1);
+    this.setupToolBarButtons(this.btnReports1, "/com/beowurks/polyjen/images/report32.png", this.menuReports1);
+    this.setupToolBarButtons(this.btnPrint1, "/com/beowurks/polyjen/images/printer32.png", this.menuPrint1);
+    this.setupToolBarButtons(this.btnExport1, "/com/beowurks/polyjen/images/export32.png", this.menuExport1);
   }
 
   // ---------------------------------------------------------------------------
@@ -221,38 +221,38 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     this.menuPolymer1.setText(Global.MENU_POLYMERIZE);
     this.menuPolymer1.setMnemonic(Global.MENU_POLYMERIZE_MNEMONIC);
     this.menuPolymer1.setToolTipText(Global.MENU_POLYMERIZE_HINT);
-    this.menuPolymer1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/polymer_parameters32.png")));
+    this.menuPolymer1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/polymer_parameters32.png")));
 
     this.menuCalculations1.setText(Global.MENU_CALCULATION);
     this.menuCalculations1.setMnemonic(Global.MENU_CALCULATION_MNEMONIC);
     this.menuCalculations1.setToolTipText(Global.MENU_CALCULATION_HINT);
-    this.menuCalculations1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/calculations32.png")));
+    this.menuCalculations1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/calculations32.png")));
 
     this.menuEvaluate1.setText(Global.MENU_EVALUATE);
     this.menuEvaluate1.setMnemonic(Global.MENU_EVALUATE_MNEMONIC);
     this.menuEvaluate1.setToolTipText(Global.MENU_EVALUATE_HINT);
-    this.menuEvaluate1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/evaluate32.png")));
+    this.menuEvaluate1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/evaluate32.png")));
 
     this.menuReports1.setText(Global.MENU_REPORTS);
     this.menuReports1.setMnemonic(Global.MENU_REPORTS_MNEMONIC);
     this.menuReports1.setToolTipText(Global.MENU_REPORTS_HINT);
-    this.menuReports1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/report32.png")));
+    this.menuReports1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/report32.png")));
 
     this.menuPrint1.setText(Global.MENU_PRINT);
     this.menuPrint1.setMnemonic(Global.MENU_PRINT_MNEMONIC);
     this.menuPrint1.setToolTipText(Global.MENU_PRINT_HINT);
-    this.menuPrint1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P, InputEvent.CTRL_MASK));
-    this.menuPrint1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/printer32.png")));
+    this.menuPrint1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P, InputEvent.CTRL_DOWN_MASK));
+    this.menuPrint1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/printer32.png")));
 
     this.menuExport1.setText(Global.MENU_EXPORT);
     this.menuExport1.setMnemonic(Global.MENU_EXPORT_MNEMONIC);
     this.menuExport1.setToolTipText(Global.MENU_EXPORT_HINT);
-    this.menuExport1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/export32.png")));
+    this.menuExport1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/export32.png")));
 
     this.menuFileExit1.setText(Global.MENU_EXIT);
     this.menuFileExit1.setMnemonic(Global.MENU_EXIT_MNEMONIC);
     this.menuFileExit1.setToolTipText(Global.MENU_EXIT_HINT);
-    this.menuFileExit1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/exit32.png")));
+    this.menuFileExit1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/exit32.png")));
 
     // ----
     this.menuActions1.setText("Actions");
@@ -261,37 +261,37 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     this.menuCreate1.setText(Global.MENU_CREATE);
     this.menuCreate1.setMnemonic(Global.MENU_CREATE_MNEMONIC);
     this.menuCreate1.setToolTipText(Global.MENU_CREATE_HINT);
-    this.menuCreate1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/create32.png")));
+    this.menuCreate1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/create32.png")));
 
     this.menuClone1.setText(Global.MENU_CLONE);
     this.menuClone1.setMnemonic(Global.MENU_CLONE_MNEMONIC);
     this.menuClone1.setToolTipText(Global.MENU_CLONE_HINT);
-    this.menuClone1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/clone32.png")));
+    this.menuClone1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/clone32.png")));
 
     this.menuModify1.setText(Global.MENU_MODIFY);
     this.menuModify1.setMnemonic(Global.MENU_MODIFY_MNEMONIC);
     this.menuModify1.setToolTipText(Global.MENU_MODIFY_HINT);
-    this.menuModify1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/modify32.png")));
+    this.menuModify1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/modify32.png")));
 
     this.menuRemove1.setText(Global.MENU_REMOVE);
     this.menuRemove1.setMnemonic(Global.MENU_REMOVE_MNEMONIC);
     this.menuRemove1.setToolTipText(Global.MENU_REMOVE_HINT);
-    this.menuRemove1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/remove32.png")));
+    this.menuRemove1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/remove32.png")));
 
     this.menuVerify1.setText(Global.MENU_VERIFY);
     this.menuVerify1.setMnemonic(Global.MENU_VERIFY_MNEMONIC);
     this.menuVerify1.setToolTipText(Global.MENU_VERIFY_HINT);
-    this.menuVerify1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/verify32.png")));
+    this.menuVerify1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/verify32.png")));
 
     this.menuRun1.setText(Global.MENU_RUN);
     this.menuRun1.setMnemonic(Global.MENU_RUN_MNEMONIC);
     this.menuRun1.setToolTipText(Global.MENU_RUN_HINT);
-    this.menuRun1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/run32.png")));
+    this.menuRun1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/run32.png")));
 
     this.menuRefresh1.setText(Global.MENU_REFRESH);
     this.menuRefresh1.setMnemonic(Global.MENU_REFRESH_MNEMONIC);
     this.menuRefresh1.setToolTipText(Global.MENU_REFRESH_HINT);
-    this.menuRefresh1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/refresh32.png")));
+    this.menuRefresh1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/refresh32.png")));
 
     // ----
     this.menuTools1.setText("Tools");
@@ -300,11 +300,11 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     this.menuLookFeel1.setText(Global.MENU_LOOKFEEL);
     this.menuLookFeel1.setMnemonic(Global.MENU_LOOKFEEL_MNEMONIC);
     this.menuLookFeel1.setToolTipText(Global.MENU_LOOKFEEL_HINT);
-    this.menuLookFeel1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/looknfeel32.png")));
+    this.menuLookFeel1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/looknfeel32.png")));
 
     this.menuSampleData1.setText(Global.MENU_SAMPLES);
     this.menuSampleData1.setToolTipText(Global.MENU_SAMPLES_HINT);
-    this.menuSampleData1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/download32.png")));
+    this.menuSampleData1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/download32.png")));
 
     // ----
     this.menuWindow1.setText("Window");
@@ -325,18 +325,18 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
     this.menuCredits1.setText(Global.MENU_CREDITS);
     this.menuCredits1.setMnemonic(Global.MENU_CREDITS_MNEMONIC);
     this.menuCredits1.setToolTipText(Global.MENU_CREDITS_HINT);
-    this.menuCredits1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/credits32.png")));
+    this.menuCredits1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/credits32.png")));
 
     this.menuDocumentationPDF1.setText(Global.MENU_HELP_DOCUMENTATION_PDF);
     this.menuDocumentationPDF1.setMnemonic(Global.MENU_HELP_DOCUMENTATION_PDF_MNEMONIC);
     this.menuDocumentationPDF1.setToolTipText(Global.MENU_HELP_DOCUMENTATION_PDF_HINT);
     this.menuDocumentationPDF1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0));
-    this.menuDocumentationPDF1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/help32.png")));
+    this.menuDocumentationPDF1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/help32.png")));
 
     this.menuAbout1.setText(Global.MENU_ABOUT);
     this.menuAbout1.setMnemonic(Global.MENU_ABOUT_MNEMONIC);
     this.menuAbout1.setToolTipText(Global.MENU_ABOUT_HINT);
-    this.menuAbout1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/about32.png")));
+    this.menuAbout1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/about32.png")));
 
     // ----
     this.menuBar1.add(this.menuFile1);
@@ -781,7 +781,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
   {
     try
     {
-      final BufferedImage loLogo = ImageIO.read(this.getClass().getResource("/com/beowurks/PolyJen/images/Logo.jpg"));
+      final BufferedImage loLogo = ImageIO.read(this.getClass().getResource("/com/beowurks/polyjen/images/Logo.jpg"));
       final String lcTitleURL = "http://polyjen.sourceforge.net/";
 
       //Polymerization in a digital laboratory

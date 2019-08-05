@@ -7,7 +7,7 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
 import com.beowurks.BeoCommon.SchemaWriter;
 import com.beowurks.BeoCommon.Util;
@@ -47,7 +47,7 @@ public class ReportCalculations1 extends ReportBase
 
     try
     {
-      this.foJasperReport = (JasperReport) JRLoader.loadObject(this.getClass().getResource("/com/beowurks/PolyJen/reports/" + this.fcReportStem + ".jasper"));
+      this.foJasperReport = (JasperReport) JRLoader.loadObject(this.getClass().getResource("/com/beowurks/polyjen/reports/" + this.fcReportStem + ".jasper"));
     }
     catch (final JRException ignore)
     {

@@ -7,11 +7,11 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
 import com.beowurks.BeoCommon.GridBagLayoutHelper;
 import com.beowurks.BeoCommon.Util;
-import com.beowurks.PolyJen.Global.DistributionStructure;
+import com.beowurks.polyjen.Global.DistributionStructure;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;

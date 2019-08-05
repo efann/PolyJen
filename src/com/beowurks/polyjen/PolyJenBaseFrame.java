@@ -7,7 +7,7 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
 import com.beowurks.BeoCommon.BaseFrame;
 
@@ -60,7 +60,7 @@ public class PolyJenBaseFrame extends BaseFrame
       }
     }
 
-    final URL loURLIcon = PolyJenBaseFrame.class.getResource("/com/beowurks/PolyJen/images/Icon.jpg");
+    final URL loURLIcon = PolyJenBaseFrame.class.getResource("/com/beowurks/polyjen/images/Icon.jpg");
     if (loURLIcon != null)
     {
       final Image loImage = Toolkit.getDefaultToolkit().createImage(loURLIcon);
@@ -80,14 +80,12 @@ public class PolyJenBaseFrame extends BaseFrame
     // which is set in super.processWindowEvent.
     super.processWindowEvent(e);
 
-    switch (e.getID())
+    if (e.getID() == WindowEvent.WINDOW_ACTIVATED)
     {
-      case WindowEvent.WINDOW_ACTIVATED:
-        if (this.flHaveMenus)
-        {
-          this.foMainFrame.updateMenusAndToolBars();
-        }
-        break;
+      if (this.flHaveMenus)
+      {
+        this.foMainFrame.updateMenusAndToolBars();
+      }
     }
   }
 

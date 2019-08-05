@@ -7,7 +7,7 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
 import com.beowurks.BeoCommon.BaseInternalFrame;
 
@@ -44,7 +44,7 @@ public class PolyJenBaseInternalFrame extends BaseInternalFrame
     super.jbInit();
     this.foMainFrame.addToDesktop(this);
 
-    final URL loURLIcon = PolyJenBaseInternalFrame.class.getResource("/com/beowurks/PolyJen/images/Icon.jpg");
+    final URL loURLIcon = PolyJenBaseInternalFrame.class.getResource("/com/beowurks/polyjen/images/Icon.jpg");
     if (loURLIcon != null)
     {
       final Image loImage = Toolkit.getDefaultToolkit().createImage(loURLIcon);

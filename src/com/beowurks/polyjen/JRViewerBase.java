@@ -7,35 +7,37 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
-import org.jfree.data.general.DatasetChangeEvent;
-import org.jfree.data.xy.AbstractXYDataset;
-import org.jfree.data.xy.XYDataset;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.view.JRViewer;
 
-// By the way, this class is used for charting the data
-// in the evaluation section. This way, I can point to
-// the rather large numeric arrays rather than duplicate
-// them with DefaultCategoryDataset.addValue routine
-// which would double the memory usage.
-// ---------------------------------------------------------------------------
-// ---------------------------------------------------------------------------
-// ---------------------------------------------------------------------------
-public abstract class BaseAbstractSeriesDataset extends AbstractXYDataset implements XYDataset
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+public class JRViewerBase extends JRViewer
 {
   // Gets rid of the following error:
   // serializable class has no definition of serialVersionUID
   private static final long serialVersionUID = 1L;
 
   // ---------------------------------------------------------------------------
-  public BaseAbstractSeriesDataset()
+  public JRViewerBase(final JasperPrint toJasperPrint) throws JRException
   {
+    super(toJasperPrint);
+
+    this.tlbToolBar.remove(this.btnPrint);
+    this.tlbToolBar.remove(this.btnReload);
   }
 
   // ---------------------------------------------------------------------------
-  public void changeDataset()
+  @Override
+  public void loadReport(final JasperPrint toJasperPrint)
   {
-    this.notifyListeners(new DatasetChangeEvent(this, this));
+    super.loadReport(toJasperPrint);
+
+    this.refreshPage();
   }
   // ---------------------------------------------------------------------------
 }

@@ -7,7 +7,7 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
 import com.beowurks.BeoCommon.SchemaWriter;
 import com.beowurks.BeoCommon.XMLTextWriter;
@@ -41,7 +41,7 @@ public class ReportParameters1 extends ReportBase
 
     try
     {
-      this.foJasperReport = (JasperReport) JRLoader.loadObject(this.getClass().getResource("/com/beowurks/PolyJen/reports/" + this.fcReportStem + ".jasper"));
+      this.foJasperReport = (JasperReport) JRLoader.loadObject(this.getClass().getResource("/com/beowurks/polyjen/reports/" + this.fcReportStem + ".jasper"));
     }
     catch (final JRException ignore)
     {
@@ -111,7 +111,7 @@ public class ReportParameters1 extends ReportBase
             loTextWriter.appendToNode(loRecord, "MonomerReaction", laArray[lnRow][0], null);
           }
 
-          loTextWriter.appendToNode(loRecord, "ReactionRate", Double.toString(laArray[lnRow][1] / 100.0) + "%", null);
+          loTextWriter.appendToNode(loRecord, "ReactionRate", (laArray[lnRow][1] / 100.0) + "%", null);
         }
       }
     }

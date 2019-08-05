@@ -27,7 +27,7 @@
       <executable name="PolyJen" iconSet="true" iconFile="D:/IntelliJ/PolyJen/Images/PolyJen.ico" executableMode="gui"
                   singleInstance="true"/>
       <splashScreen show="true" bitmapFile="D:/IntelliJ/PolyJen/Images/Beowurks.png"/>
-      <java mainClass="com.beowurks.PolyJen.Application">
+      <java mainClass="com.beowurks.polyjen.Application">
         <classPath>
           <archive location="PolyJen.jar" failOnError="false"/>
         </classPath>

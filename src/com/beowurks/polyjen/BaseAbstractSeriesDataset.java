@@ -7,25 +7,35 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
-import com.beowurks.BeoCommon.BaseDialog;
+import org.jfree.data.general.DatasetChangeEvent;
+import org.jfree.data.xy.AbstractXYDataset;
+import org.jfree.data.xy.XYDataset;
 
-import javax.swing.JFrame;
-
+// By the way, this class is used for charting the data
+// in the evaluation section. This way, I can point to
+// the rather large numeric arrays rather than duplicate
+// them with DefaultCategoryDataset.addValue routine
+// which would double the memory usage.
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------
-public class PolyJenBaseDialog extends BaseDialog
+public abstract class BaseAbstractSeriesDataset extends AbstractXYDataset implements XYDataset
 {
   // Gets rid of the following error:
   // serializable class has no definition of serialVersionUID
   private static final long serialVersionUID = 1L;
 
   // ---------------------------------------------------------------------------
-  public PolyJenBaseDialog(final JFrame toFrame, final String tcTitle)
+  public BaseAbstractSeriesDataset()
   {
-    super(toFrame, tcTitle);
+  }
+
+  // ---------------------------------------------------------------------------
+  public void changeDataset()
+  {
+    this.notifyListeners(new DatasetChangeEvent(this, this));
   }
   // ---------------------------------------------------------------------------
 }

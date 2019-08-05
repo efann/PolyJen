@@ -7,7 +7,7 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
 import java.io.BufferedInputStream;
 import java.util.Enumeration;
@@ -57,7 +57,7 @@ public class ZipTesting
   // ---------------------------------------------------------------------------
   private void testAll() throws Exception
   {
-    final byte laData[] = new byte[ZipTesting.DATA_BUFFER];
+    final byte[] laData = new byte[ZipTesting.DATA_BUFFER];
     final CRC32 loCRC32 = new CRC32();
     Exception loException = null;
 

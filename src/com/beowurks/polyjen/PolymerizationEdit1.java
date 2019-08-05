@@ -7,7 +7,7 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
 import com.beowurks.BeoCommon.BaseButton;
 import com.beowurks.BeoCommon.BaseEditTable;
@@ -43,14 +43,14 @@ public class PolymerizationEdit1 extends PolyJenBaseDialog implements ActionList
   private final JPanel pnlTextBoxGeneral = new JPanel();
   private final JPanel pnlTextBoxLevel = new JPanel();
   private final JPanel pnlButtons = new JPanel();
-  private JPanel pnlTab[];
+  private JPanel[] pnlTab;
 
   private final BaseTabbedPane tabPane = new BaseTabbedPane();
 
   private final GridBagLayoutHelper gridBagLayoutTextBoxGeneral = new GridBagLayoutHelper();
   private final GridBagLayoutHelper gridBagLayoutTextBoxLevel = new GridBagLayoutHelper();
   private final GridBagLayoutHelper gridBagLayoutButtons = new GridBagLayoutHelper();
-  private GridBagLayoutHelper gridBagLayoutTab[];
+  private GridBagLayoutHelper[] gridBagLayoutTab;
 
   private final BaseTextField txtCreatedOn1 = new BaseTextField();
   private final BaseTextField txtCreatedBy1 = new BaseTextField();
@@ -74,18 +74,18 @@ public class PolymerizationEdit1 extends PolyJenBaseDialog implements ActionList
 
   private final JLabel lblLevelBlankInstructions1 = new JLabel();
   private final JTextArea lblLevelInstructions1 = new JTextArea();
-  private JTextArea lblGridInstructions[];
+  private JTextArea[] lblGridInstructions;
 
-  private JLabel lblLevel[];
-  private FormattedIntegerField txtTotalMonomerReacted[];
+  private JLabel[] lblLevel;
+  private FormattedIntegerField[] txtTotalMonomerReacted;
 
   private final BaseButton btnSave1 = new BaseButton(76, 30);
   private final BaseButton btnCancel1 = new BaseButton(76, 30);
   private final BaseButton btnVerify1 = new BaseButton(76, 30);
 
-  private JScrollPane scrollSite[][];
-  private BaseEditTable grdSite[][];
-  private EditingTabelModel editGridModel[][];
+  private JScrollPane[][] scrollSite;
+  private BaseEditTable[][] grdSite;
+  private EditingTabelModel[][] editGridModel;
 
   private PolymerParametersXML foPolymerParametersXML;
 
@@ -485,17 +485,17 @@ public class PolymerizationEdit1 extends PolyJenBaseDialog implements ActionList
     this.btnSave1.setText(Global.BUTTON_DATA_SAVE);
     this.btnSave1.setMnemonic(Global.BUTTON_DATA_SAVE_MNEMONIC);
     this.btnSave1.setToolTipText(Global.BUTTON_DATA_SAVE_HINT);
-    this.btnSave1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/ok22.png")));
+    this.btnSave1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/ok22.png")));
 
     this.btnCancel1.setText(Global.BUTTON_DATA_CANCEL);
     this.btnCancel1.setMnemonic(Global.BUTTON_DATA_CANCEL_MNEMONIC);
     this.btnCancel1.setToolTipText(Global.BUTTON_DATA_CANCEL_HINT);
-    this.btnCancel1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/cancel22.png")));
+    this.btnCancel1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/cancel22.png")));
 
     this.btnVerify1.setText(Global.MENU_VERIFY);
     this.btnVerify1.setMnemonic(Global.MENU_VERIFY_MNEMONIC);
     this.btnVerify1.setToolTipText(Global.MENU_VERIFY_HINT);
-    this.btnVerify1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/verify22.png")));
+    this.btnVerify1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/verify22.png")));
 
   }
 
@@ -732,23 +732,23 @@ class TableTextBoxMouseEventHandler extends MouseAdapter implements ActionListen
 
   // ---------------------------------------------------------------------------
   @Override
-  public void mousePressed(final MouseEvent e)
+  public void mousePressed(final MouseEvent teEvent)
   {
-    if ((e.getModifiers() & InputEvent.BUTTON3_MASK) == InputEvent.BUTTON3_MASK)
+    if ((teEvent.getModifiersEx() & InputEvent.BUTTON3_DOWN_MASK) == InputEvent.BUTTON3_DOWN_MASK)
     {
 
       if (this.foTable.isEnabled())
       {
         if (this.foComponent instanceof JTable)
         {
-          final Point loPoint = new Point(e.getX(), e.getY());
+          final Point loPoint = new Point(teEvent.getX(), teEvent.getY());
           final JTable loTable = (JTable) this.foComponent;
           final int lnCol = loTable.columnAtPoint(loPoint);
           final int lnRow = loTable.rowAtPoint(loPoint);
           loTable.changeSelection(lnRow, lnCol, false, false);
         }
 
-        this.foPopupMenu.show(this.foComponent, e.getX(), e.getY());
+        this.foPopupMenu.show(this.foComponent, teEvent.getX(), teEvent.getY());
       }
     }
   }
@@ -805,7 +805,7 @@ class EditingTabelModel extends AbstractTableModel
 
     // private final Vector<HighScopeProgram> foHighScopeList = new Vector<HighScopeProgram>();
 
-    this.faData = new Vector<>((lnCount > 6) ? lnCount : 6);
+    this.faData = new Vector<>(Math.max(lnCount, 6));
 
     for (int i = 0; i < lnCount; i++)
     {

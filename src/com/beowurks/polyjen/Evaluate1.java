@@ -7,7 +7,7 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
 import com.beowurks.BeoCommon.FormattedIntegerField;
 import com.beowurks.BeoCommon.GridBagLayoutHelper;
@@ -344,7 +344,7 @@ public class Evaluate1 extends PolyJenBaseInternalFrame implements Runnable
     final int lnInitiatorMolecules = this.fnInitiatorMolecules;
     final int lnMonomerMolecules = this.fnMonomerMolecules;
 
-    final int laElements[] = this.faElements;
+    final int[] laElements = this.faElements;
 
     int lnTrackProgress = -1;
     int lnCurrentProgress;
@@ -387,7 +387,7 @@ public class Evaluate1 extends PolyJenBaseInternalFrame implements Runnable
 
       final int lnDistribution = this.fnDistributionMax - this.fnDistributionMin + 1;
       this.faDistribution = new int[lnDistribution];
-      final int laDistribution[] = this.faDistribution;
+      final int[] laDistribution = this.faDistribution;
 
       for (int i = 0; i < lnDistribution; ++i)
       {
@@ -454,8 +454,7 @@ class EvaluateDistributionDataset extends BaseAbstractSeriesDataset
   @Override
   public Number getY(final int series, final int item)
   {
-    final int lnValue = (this.foEvaluate.faDistribution == null) ? 0 : this.foEvaluate.faDistribution[item];
-    return (lnValue);
+    return ((this.foEvaluate.faDistribution == null) ? 0 : this.foEvaluate.faDistribution[item]);
   }
 
   // ---------------------------------------------------------------------------
@@ -521,8 +520,7 @@ class EvaluateSpreadDataset extends BaseAbstractSeriesDataset
   @Override
   public Number getY(final int series, final int item)
   {
-    final int lnValue = (this.foEvaluate.faElements == null) ? 0 : this.foEvaluate.faElements[item];
-    return (lnValue);
+    return ((this.foEvaluate.faElements == null) ? 0 : this.foEvaluate.faElements[item]);
   }
 
   // ---------------------------------------------------------------------------

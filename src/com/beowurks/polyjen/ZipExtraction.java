@@ -7,7 +7,7 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
 import com.beowurks.BeoCommon.Util;
 
@@ -84,7 +84,7 @@ public class ZipExtraction
     FileOutputStream loFileOutput = null;
 
     ZipEntry loEntry;
-    final byte laData[] = new byte[ZipExtraction.DATA_BUFFER];
+    final byte[] laData = new byte[ZipExtraction.DATA_BUFFER];
 
     final Enumeration<? extends ZipEntry> loEnum = this.foZipFile.entries();
     final int lnCount = this.foZipFile.size();

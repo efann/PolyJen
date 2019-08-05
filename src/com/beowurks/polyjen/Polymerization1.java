@@ -7,7 +7,7 @@
  *
  */
 
-package com.beowurks.PolyJen;
+package com.beowurks.polyjen;
 
 import com.beowurks.BeoCommon.BaseButton;
 import com.beowurks.BeoCommon.GridBagLayoutHelper;
@@ -102,31 +102,31 @@ public class Polymerization1 extends PolyJenBaseInternalFrame implements ActionL
     this.btnCreate1.setMnemonic(Global.MENU_CREATE_MNEMONIC);
     this.btnCreate1.setToolTipText(Global.MENU_CREATE_HINT);
     this.btnCreate1.setActionCommand(Global.MENU_CREATE);
-    this.btnCreate1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/create22.png")));
+    this.btnCreate1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/create22.png")));
 
     this.btnClone1.setText(Global.MENU_CLONE);
     this.btnClone1.setMnemonic(Global.MENU_CLONE_MNEMONIC);
     this.btnClone1.setToolTipText(Global.MENU_CLONE_HINT);
     this.btnClone1.setActionCommand(Global.MENU_CLONE);
-    this.btnClone1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/clone22.png")));
+    this.btnClone1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/clone22.png")));
 
     this.btnModify1.setText(Global.MENU_MODIFY);
     this.btnModify1.setMnemonic(Global.MENU_MODIFY_MNEMONIC);
     this.btnModify1.setToolTipText(Global.MENU_MODIFY_HINT);
     this.btnModify1.setActionCommand(Global.MENU_MODIFY);
-    this.btnModify1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/modify22.png")));
+    this.btnModify1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/modify22.png")));
 
     this.btnRemove1.setText(Global.MENU_REMOVE);
     this.btnRemove1.setMnemonic(Global.MENU_REMOVE_MNEMONIC);
     this.btnRemove1.setToolTipText(Global.MENU_REMOVE_HINT);
     this.btnRemove1.setActionCommand(Global.MENU_REMOVE);
-    this.btnRemove1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/remove22.png")));
+    this.btnRemove1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/remove22.png")));
 
     this.btnVerify1.setText(Global.MENU_VERIFY);
     this.btnVerify1.setMnemonic(Global.MENU_VERIFY_MNEMONIC);
     this.btnVerify1.setToolTipText(Global.MENU_VERIFY_HINT);
     this.btnVerify1.setActionCommand(Global.MENU_VERIFY);
-    this.btnVerify1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/PolyJen/images/verify22.png")));
+    this.btnVerify1.setIcon(new ImageIcon(this.getClass().getResource("/com/beowurks/polyjen/images/verify22.png")));
   }
 
   // ---------------------------------------------------------------------------
