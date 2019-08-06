@@ -10,85 +10,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/install/install.install4j" beforeDir="false" afterPath="$PROJECT_DIR$/install/install.install4j" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/AppProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/BaseAbstractSeriesDataset.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Calculations1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ChartButton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Evaluate1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/FileFilterExports.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Global.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/JRViewerBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ListComponents.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/MainFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolyJenBaseDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolyJenBaseFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolyJenBaseInternalFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolymerParametersXML.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/Polymerization1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/PolymerizationEdit1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportCalculations1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportEvaluation1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ReportParameters1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ZipExtraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/ZipExtraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/ZipTesting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/Icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/Logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/about32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/calculations32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/cancel22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/clone22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/clone32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/coffee32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/create22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/create32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/credits32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/download32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/evaluate32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/exit22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/exit32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/export32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/help32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/looknfeel32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/modify22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/modify32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/ok22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/polymer_parameters32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/printer32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/refresh32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/remove22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/remove32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/report32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/run32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/verify22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/images/verify32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Calculations1.jasper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Calculations1.jrxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Evaluation1.jasper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Evaluation1.jrxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Parameters1.jasper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/Parameters1.jrxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/calculations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/evaluation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/PolyJen/reports/parameters.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/AppProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/AppProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/BaseAbstractSeriesDataset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/BaseAbstractSeriesDataset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/Calculations1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/Calculations1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/ChartButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/ChartButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/Evaluate1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/Evaluate1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/FileFilterExports.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/FileFilterExports.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/Global.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/JRViewerBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/JRViewerBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/ListComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/ListComponents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/PolyJenBaseDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/PolyJenBaseDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/PolyJenBaseFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/PolyJenBaseFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/PolyJenBaseInternalFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/PolyJenBaseInternalFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/Polymerization1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/Polymerization1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/ReportBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/ReportBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/ReportCalculations1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/ReportCalculations1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/ReportEvaluation1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/ReportEvaluation1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -251,7 +172,10 @@
       <workItem from="1564787665034" duration="610000" />
       <workItem from="1564788344018" duration="8000" />
       <workItem from="1564929782088" duration="131000" />
-      <workItem from="1565015667453" duration="3278000" />
+      <workItem from="1565015667453" duration="4833000" />
+      <workItem from="1565027201755" duration="629000" />
+      <workItem from="1565032324897" duration="1258000" />
+      <workItem from="1565102923897" duration="101000" />
     </task>
     <servers />
   </component>
