@@ -583,7 +583,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
         ((Calculations1) loInternalFrame).runCalculations();
       }
     }
-    else if (loObject == this.btnReports1)
+    else if ((loObject == this.btnReports1) && checkFonts())
     {
       if (loActiveFrame instanceof Polymerization1)
       {
@@ -625,7 +625,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
         }
       }
     }
-    else if (loObject == this.btnPrint1)
+    else if ((loObject == this.btnPrint1) && checkFonts())
     {
       if (loActiveFrame instanceof ReportBase)
       {
@@ -858,6 +858,27 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
   }
 
   // ---------------------------------------------------------------------------
+  private boolean checkFonts()
+  {
+    final String lcFont = "Arial";
+    if (Util.checkForFontAvailability(lcFont))
+    {
+      return (true);
+    }
+
+    StringBuffer lcMessage = new StringBuffer("");
+    lcMessage.append(String.format("Your %s system is missing the %s font.\n", System.getProperty("os.name"), lcFont));
+    lcMessage.append("By the way, this font is standard on Windows and Mac OS X.\n");
+    lcMessage.append("If you're using Linux, try running the following commands:\n\n");
+    lcMessage.append("sudo apt install ttf-mscorefonts-installer\n");
+    lcMessage.append("sudo fc-cache -f -v\n\n");
+    lcMessage.append("Or google 'ubuntu install arial' or 'linux install arial'");
+
+    Util.errorMessage(this, lcMessage.toString());
+    return (false);
+  }
+
+  // ---------------------------------------------------------------------------
   protected void addToDesktop(final JInternalFrame toFrame)
   {
     this.pnlGradientDesktop.add(toFrame);
@@ -886,17 +907,17 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
   // Interface ActionListener
   // ---------------------------------------------------------------------------
   @Override
-  public void actionPerformed(final ActionEvent e)
+  public void actionPerformed(final ActionEvent teAction)
   {
-    final Object loSource = e.getSource();
+    final Object loSource = teAction.getSource();
 
     if (loSource instanceof JMenuItem)
     {
-      this.performMenuAction(e);
+      this.performMenuAction(teAction);
     }
     else if (loSource instanceof JButton)
     {
-      this.performButtonAction(e);
+      this.performButtonAction(teAction);
     }
   }
 

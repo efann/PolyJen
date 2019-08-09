@@ -46,12 +46,6 @@ public class Application
     // You can a list of the defaults by doing the following:
     // Util.listDefaultSettings();
 
-    String[] laInfo = java.awt.GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
-    final int lnFonts = laInfo.length;
-    for (int i = 0; i < lnFonts; ++i)
-    {
-      System.err.println(laInfo[i]);
-    }
     Util.setUIManagerAppearances();
 
     LFCommon.setLookFeel(this.foAppProperties.getLookAndFeel(), this.foAppProperties.getMetalTheme(), null, true);
