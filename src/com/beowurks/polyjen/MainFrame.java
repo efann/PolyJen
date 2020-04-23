@@ -444,7 +444,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
         if (loItem instanceof JMenuItem)
         {
           ((JMenuItem) loItem).addActionListener(this);
-          ((JMenuItem) loItem).addMouseMotionListener(this);
+          loItem.addMouseMotionListener(this);
         }
       }
     }
@@ -583,7 +583,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
         ((Calculations1) loInternalFrame).runCalculations();
       }
     }
-    else if ((loObject == this.btnReports1) && checkFonts())
+    else if ((loObject == this.btnReports1) && this.checkFonts())
     {
       if (loActiveFrame instanceof Polymerization1)
       {
@@ -625,7 +625,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
         }
       }
     }
-    else if ((loObject == this.btnPrint1) && checkFonts())
+    else if ((loObject == this.btnPrint1) && this.checkFonts())
     {
       if (loActiveFrame instanceof ReportBase)
       {
@@ -866,7 +866,7 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
       return (true);
     }
 
-    StringBuffer lcMessage = new StringBuffer("");
+    final StringBuffer lcMessage = new StringBuffer();
     lcMessage.append(String.format("Your %s system is missing the %s font.\n", System.getProperty("os.name"), lcFont));
     lcMessage.append("By the way, this font is standard on Windows and Mac OS X.\n");
     lcMessage.append("If you're using Linux, try running the following commands:\n\n");

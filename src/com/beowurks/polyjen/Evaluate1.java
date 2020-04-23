@@ -152,7 +152,7 @@ public class Evaluate1 extends PolyJenBaseInternalFrame implements Runnable
     this.foSpreadXYData = new EvaluateSpreadDataset(this);
 
     final JFreeChart loChart = ChartFactory.createXYLineChart("Evaluate Spread", "Initiator Molecule", "Monomers Reacted", this.foSpreadXYData, PlotOrientation.VERTICAL, false, true, // tooltips
-        false // urls
+      false // urls
     );
 
     final XYPlot loPlot = loChart.getXYPlot();
@@ -169,7 +169,7 @@ public class Evaluate1 extends PolyJenBaseInternalFrame implements Runnable
     this.foDistributionXYData = new EvaluateDistributionDataset(this);
 
     final JFreeChart loChart = ChartFactory.createXYLineChart("Evaluate Distribution", "# of Monomers in Polymer", "# of Initiator Molecules", this.foDistributionXYData, PlotOrientation.VERTICAL, false, true, // tooltips
-        false // urls
+      false // urls
     );
 
     loChart.setBackgroundPaint(new GradientPaint(0, 0, UIManager.getColor("Button.background"), 0, 1000, Color.darkGray, false));

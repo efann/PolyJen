@@ -208,9 +208,9 @@ public class Calculations1 extends PolyJenBaseInternalFrame implements ActionLis
   private void setupCharts()
   {
     this.chtDistribution1 = ChartFactory.createBarChart3D("Distribution", "# of Oligomers", // domain
-        "Mole %", // range
-        null, PlotOrientation.VERTICAL, false, true, // tooltips
-        false // urls
+      "Mole %", // range
+      null, PlotOrientation.VERTICAL, false, true, // tooltips
+      false // urls
     );
 
     this.chtDistribution1.setBackgroundPaint(new GradientPaint(0, 0, UIManager.getColor("Button.background"), 0, 1000, Color.darkGray, false));

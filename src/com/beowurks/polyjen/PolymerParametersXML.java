@@ -556,7 +556,7 @@ public class PolymerParametersXML extends BaseXMLData
   // ---------------------------------------------------------------------------
   public boolean verifyData(final Component toOwnerComponent, final int tnDisplayOption)
   {
-    final StringBuffer lcProblems = new StringBuffer("");
+    final StringBuffer lcProblems = new StringBuffer();
 
     this.doCheckListOfPossibleProblems(lcProblems);
 
