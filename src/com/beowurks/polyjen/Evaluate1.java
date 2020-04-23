@@ -465,14 +465,14 @@ class EvaluateDistributionDataset extends BaseAbstractSeriesDataset
   }
 
   // ---------------------------------------------------------------------------
-  public String getSeriesName(final int series)
+  public String getSeriesName()
   {
     return ("Distribution");
   }
 
   // ---------------------------------------------------------------------------
   @Override
-  public String getSeriesKey(final int series)
+  public String getSeriesKey(final int tnSeries)
   {
     return ("Distribution");
   }

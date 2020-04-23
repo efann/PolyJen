@@ -866,15 +866,14 @@ public class MainFrame extends PolyJenBaseFrame implements ActionListener, Mouse
       return (true);
     }
 
-    final StringBuffer lcMessage = new StringBuffer();
-    lcMessage.append(String.format("Your %s system is missing the %s font.\n", System.getProperty("os.name"), lcFont));
-    lcMessage.append("By the way, this font is standard on Windows and Mac OS X.\n");
-    lcMessage.append("If you're using Linux, try running the following commands:\n\n");
-    lcMessage.append("sudo apt install ttf-mscorefonts-installer\n");
-    lcMessage.append("sudo fc-cache -f -v\n\n");
-    lcMessage.append("Or google 'ubuntu install arial' or 'linux install arial'");
+    final String lcMessage = String.format("Your %s system is missing the %s font.\n", System.getProperty("os.name"), lcFont) +
+      "By the way, this font is standard on Windows and Mac OS X.\n" +
+      "If you're using Linux, try running the following commands:\n\n" +
+      "sudo apt install ttf-mscorefonts-installer\n" +
+      "sudo fc-cache -f -v\n\n" +
+      "Or google 'ubuntu install arial' or 'linux install arial'";
 
-    Util.errorMessage(this, lcMessage.toString());
+    Util.errorMessage(this, lcMessage);
     return (false);
   }
 

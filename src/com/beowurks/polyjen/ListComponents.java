@@ -250,7 +250,7 @@ public class ListComponents implements ListSelectionListener, ActionListener
   // ---------------------------------------------------------------------------
   public boolean isReadyToRefresh()
   {
-    return (((this.foList != null) || (this.cboParameterList1 != null) || (this.foList != null)));
+    return (((this.foList != null) || (this.cboParameterList1 != null)));
   }
 
   // ---------------------------------------------------------------------------

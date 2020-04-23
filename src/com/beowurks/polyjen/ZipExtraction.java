@@ -15,7 +15,6 @@ import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.text.SimpleDateFormat;
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
@@ -26,8 +25,6 @@ import java.util.zip.ZipFile;
 public class ZipExtraction
 {
   private static final int DATA_BUFFER = 2048;
-
-  protected final SimpleDateFormat foRegularDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
 
   private final String fcStartDirectory;
   private ZipFile foZipFile = null;

@@ -28,7 +28,6 @@ public class Global
 
   protected final static int GENERATION_OPTION_SEQ_NBR = 0;
   protected final static int GENERATION_OPTION_RAN_NBR = 1;
-  protected final static int GENERATION_OPTION_LIMIT = 2;
 
   protected final static int ENGINE_LIMIT = 10000;
 
@@ -47,13 +46,11 @@ public class Global
   protected final static String MENU_RUN = "Run";
   protected final static String MENU_REFRESH = "Refresh";
   protected final static String MENU_LOOKFEEL = "Look & Feel...";
-  protected final static String MENU_JAVAMANAGER = "Java Application Manager";
   protected final static String MENU_SAMPLES = "Download Sample Data";
   protected final static String MENU_CASCADE = "Cascade";
   protected final static String MENU_CLOSEALL = "Close All";
   protected final static String MENU_CREDITS = "Credits";
   protected final static String MENU_HELP_DOCUMENTATION_PDF = "Documentation (pdf)";
-  protected final static String MENU_HELP_DOCUMENTATION_HTM = "Documentation (htm)";
   protected final static String MENU_ABOUT = "About";
 
   protected final static char MENU_POLYMERIZE_MNEMONIC = 'O';
@@ -75,11 +72,9 @@ public class Global
   protected final static char MENU_CLOSEALL_MNEMONIC = 'L';
   protected final static char MENU_CREDITS_MNEMONIC = 'C';
   protected final static char MENU_HELP_DOCUMENTATION_PDF_MNEMONIC = 'D';
-  protected final static char MENU_HELP_DOCUMENTATION_HTM_MNEMONIC = 'O';
   protected final static char MENU_ABOUT_MNEMONIC = 'A';
 
   protected final static String MENU_LOOKFEEL_HINT = "Customize the look & feel of this application";
-  protected final static String MENU_JAVAMANAGER_HINT = "Launch the Java Application Manager";
   protected final static String MENU_SAMPLES_HINT = "Download Sample Data for calculations and analysis";
   protected final static String MENU_CLOSEALL_HINT = "Close all of the forms in this program";
   protected final static String MENU_CASCADE_HINT = "Cascade all of the visible forms in this program";
@@ -99,7 +94,6 @@ public class Global
   protected final static String MENU_EXIT_HINT = "Exit the PolyJen program";
   protected final static String MENU_CREDITS_HINT = "Credits for pieces parts used in this program";
   protected final static String MENU_HELP_DOCUMENTATION_PDF_HINT = "Documentation, in Adobe Acrobat format, on how to use this program";
-  protected final static String MENU_HELP_DOCUMENTATION_HTM_HINT = "Documentation, in web page format, on how to use this program";
   protected final static String MENU_ABOUT_HINT = "About PolyJen";
 
   protected final static String BUTTON_DATA_SAVE = "Save";

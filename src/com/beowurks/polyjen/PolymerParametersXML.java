@@ -699,6 +699,7 @@ public class PolymerParametersXML extends BaseXMLData
               if (laArray[x] == 0)
               {
                 llZeroFound = true;
+                break;
               }
             }
 

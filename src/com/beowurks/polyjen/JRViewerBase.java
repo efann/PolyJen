@@ -9,7 +9,6 @@
 
 package com.beowurks.polyjen;
 
-import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.view.JRViewer;
 
@@ -23,7 +22,7 @@ public class JRViewerBase extends JRViewer
   private static final long serialVersionUID = 1L;
 
   // ---------------------------------------------------------------------------
-  public JRViewerBase(final JasperPrint toJasperPrint) throws JRException
+  public JRViewerBase(final JasperPrint toJasperPrint)
   {
     super(toJasperPrint);
 
