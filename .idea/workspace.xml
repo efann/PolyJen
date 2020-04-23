@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="395dfbfa-4022-438e-b22a-3b3634323a49" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-    </list>
+    <list default="true" id="395dfbfa-4022-438e-b22a-3b3634323a49" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,6 +176,7 @@
       <workItem from="1587486510352" duration="13000" />
       <workItem from="1587570150728" duration="164000" />
       <workItem from="1587573089287" duration="12000" />
+      <workItem from="1587667967804" duration="664000" />
     </task>
     <servers />
   </component>
@@ -196,5 +194,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="706" y="404" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1587667976063">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="706" y="404" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587667976063" />
   </component>
 </project>
