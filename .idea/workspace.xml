@@ -7,16 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="395dfbfa-4022-438e-b22a-3b3634323a49" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/samp00004.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/samp00004.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/Evaluate1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/Evaluate1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/Global.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/JRViewerBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/JRViewerBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/ListComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/ListComponents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/PolymerParametersXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/PolymerParametersXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beowurks/polyjen/ZipExtraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beowurks/polyjen/ZipExtraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/install.install4j" beforeDir="false" afterPath="$PROJECT_DIR$/install/install.install4j" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +181,7 @@
       <workItem from="1587570150728" duration="164000" />
       <workItem from="1587573089287" duration="12000" />
       <workItem from="1587667967804" duration="2036000" />
+      <workItem from="1587673359401" duration="935000" />
     </task>
     <servers />
   </component>
@@ -211,22 +205,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="706" y="404" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587673238499" />
-    <state width="937" height="294" key="GridCell.Tab.0.bottom" timestamp="1587673330233">
+    <state width="937" height="294" key="GridCell.Tab.0.bottom" timestamp="1587743206850">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="937" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587673330233" />
-    <state width="937" height="294" key="GridCell.Tab.0.center" timestamp="1587673330233">
+    <state width="937" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587743206850" />
+    <state width="937" height="294" key="GridCell.Tab.0.center" timestamp="1587743206849">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="937" height="294" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587673330233" />
-    <state width="937" height="294" key="GridCell.Tab.0.left" timestamp="1587673330233">
+    <state width="937" height="294" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587743206849" />
+    <state width="937" height="294" key="GridCell.Tab.0.left" timestamp="1587743206849">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="937" height="294" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587673330233" />
-    <state width="937" height="294" key="GridCell.Tab.0.right" timestamp="1587673330233">
+    <state width="937" height="294" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587743206849" />
+    <state width="937" height="294" key="GridCell.Tab.0.right" timestamp="1587743206850">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="937" height="294" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587673330233" />
+    <state width="937" height="294" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587743206850" />
     <state x="440" y="114" key="SettingsEditor" timestamp="1587672589053">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

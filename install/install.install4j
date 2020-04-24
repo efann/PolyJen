@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <install4j version="8.0.5" transformSequenceNumber="8">
   <directoryPresets config="D:/IntelliJ/PolyJen/Images" />
-  <application name="PolyJen" applicationId="3454-8634-3733-0403" mediaDir="D:/temp/install4j/PolyJen/media" shortName="PolyJen" publisher="Beowurks" publisherWeb="https://www.beowurks.com/applications/single/PolyJen" version="2019.0.5.30" convertDotsToUnderscores="false" macVolumeId="704ca49a6335aefd" javaMinVersion="12" javaMaxVersion="12">
+  <application name="PolyJen" applicationId="3454-8634-3733-0403" mediaDir="D:/temp/install4j/PolyJen/media" shortName="PolyJen" publisher="Beowurks" publisherWeb="https://www.beowurks.com/applications/single/PolyJen" version="2020.0.0.36" convertDotsToUnderscores="false" macVolumeId="704ca49a6335aefd" javaMinVersion="12" javaMaxVersion="12">
     <languages>
       <principalLanguage id="en" customLocalizationFile="D:/IntelliJ/PolyJen/install/English.utf8" />
     </languages>
